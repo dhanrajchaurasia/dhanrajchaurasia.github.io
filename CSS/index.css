@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: Noto Sans; */
+    /* font-family: Patua One; */
+    /* font-family: Russo One; */
+    font-family: Fredoka One;
+    /*     font-family: Righteous; */
+    /* background-color:black; */
+}
+body{
+    background-image: url(../Images/dark-hacker.jpg);
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position-y: 90px;
+    height: 1100px;
+    background-color: black;
+}
+header{
+    text-align: center;
+    background-color: black;
+}
+nav ul{
+    overflow: auto;
+}
+nav ul li, #search, #head{
+    float: left;
+    list-style: none;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+nav ul li a, #search, #head{
+    text-decoration: none;
+    color: white;
+}
+nav ul li:hover{
+    padding-bottom: 1%;
+    border-bottom: 2px double #f54b42;
+}
+#home, #head{
+padding-bottom: 1%;
+border-bottom: 2px double #f54b42;
+}
+#head{
+    margin-left: 4%;
+    margin-right: 18%;
+    margin-top: -1%;
+    float: both;
+    font-size: 45px;
+    font-family: Righteous;
+}
+header h1{
+    color: white;
+    font-size: 30px;
+    visibility:hidden;
+}
+#search{
+    cursor: pointer;
+}
+.main{
+    color: white;
+    margin-left: 10%;
+    margin-top: 1%;
+    font-family: Righteous;
+}
+.main strong{
+    font-size: 40px;
+    padding-bottom: 10px;
+    font-family: Righteous;
+    /* border-bottom:2px double blue; */
+    border-bottom:2px double #424ef5;
+}
+.main span{
+    font-size: 40px;
+}
+.main article span, #motive{
+    font-family: Righteous;
+    text-align: left;
+    font-size: 25px;
+}
+#motive{
+    font-family: Patua One;
+    text-align: left;
+    font-size: 30px;
+    border-bottom: 2px double #42f563;
+    padding-bottom: 10px;
+}
+footer{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    border-top: 2px double #f57242;
+    padding-top: 2%;
+}
+section a{
+    color: white;
+    font-size: 40px;
+    margin-right: 1.5%;
+    text-decoration: none;
+}
+footer h1{
+    margin-bottom: 1%
+}
+.list ul li{
+    list-style:none;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Patua One;
+}

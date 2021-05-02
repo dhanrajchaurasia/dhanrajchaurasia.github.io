@@ -7,133 +7,186 @@
     <title>Cool Calm Coder</title>
 </head>
 <!-- Google Fonts Import -->
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One"> -->
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla"> --> -->
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka+One">
 <!-- CSS Stylesheet import -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!-- <link rel="stylesheet" href="../Github Website/CSS/index.css"> -->
 <style>
-    *{
-    margin: 0;
-    padding: 0;
-    /* font-family: Noto Sans; */
-    /* font-family: Patua One; */
-    /* font-family: Russo One; */
-    font-family: Fredoka One;
-    /*     font-family: Righteous; */
-    /* background-color:black; */
-}
-body{
-    background-image: url(https://wallpapercave.com/wp/wp2406521.jpg);
-    background-repeat:no-repeat;
-    background-size: contain;
-    background-position-y: 90px;
-    height: 1100px;
-    background-color: black;
-}
-header{
-    text-align: center;
-    background-color: black;
-}
-nav ul{
-    overflow: auto;
-}
-nav ul li, #search, #head{
-    float: left;
-    list-style: none;
-    font-size: 20px;
-    margin: 0px 20px;
-}
-nav ul li a, #search, #head{
-    text-decoration: none;
-    color: white;
-}
-nav ul li:hover{
-    padding-bottom: 1%;
-    border-bottom: 2px double #f54b42;
-}
-#home, #head{
-padding-bottom: 1%;
-border-bottom: 2px double #f54b42;
-}
-#head{
-    margin-left: 4%;
-    margin-right: 18%;
-    margin-top: -1%;
-    float: both;
-    font-size: 45px;
-    font-family: Righteous;
-}
-header h1{
-    color: white;
-    font-size: 30px;
-    visibility:hidden;
-}
-#search{
-    cursor: pointer;
-}
-.main{
-    color: white;
-    margin-left: 10%;
-    margin-top: 1%;
-    font-family: Righteous;
-}
-.main strong{
-    font-size: 40px;
-    padding-bottom: 10px;
-    font-family: Righteous;
-    /* border-bottom:2px double blue; */
-    border-bottom:2px double #424ef5;
-}
-.main span{
-    font-size: 40px;
-}
-.main article span, #motive{
-    font-family: Righteous;
-    text-align: left;
-    font-size: 25px;
-}
-#motive{
-    font-family: Patua One;
-    text-align: left;
-    font-size: 30px;
-    border-bottom: 2px double #42f563;
-    padding-bottom: 10px;
-}
-footer{
-    color: white;
-    text-align: center;
-    margin-top: 5%;
-    border-top: 2px double #f57242;
-    padding-top: 2%;
-}
-section a{
-    color: white;
-    font-size: 40px;
-    margin-right: 1.5%;
-    text-decoration: none;
-}
-footer h1{
-    margin-bottom: 1%
-}
-.list ul li{
-    list-style:none;
-    font-size: 20px;
-    line-height: 30px;
-    font-family: Patua One;
-}
+    * {
+        /* outline: 2px solid white; */
+        margin: 0;
+        padding: 0;
+        /* font-family: Noto Sans;
+        font-family: Russo One;
+        font-family: Montserrat;
+        font-family: Karla;
+        font-family: Rubik;
+        font-family: Righteous; */
+        /* font-family: Patua One; */
+        font-family: Fredoka One;
+        /*   */
+        /* background-color:black;*/
+    }
+
+    #logo {
+        width: 110px;
+        position: relative;
+        top: 48px;
+        left: -30px;
+        background-color: black;
+    }
+
+    body {
+
+        background-image: url(https://wallpapercave.com/wp/wp2406521.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 90px;
+        height: 1600px;
+        background-color: black;
+    }
+    header {
+        text-align: center;
+        background-color: black;
+    }
+
+    nav ul li,
+    #search,
+    #head {
+
+        float: left;
+        list-style: none;
+        font-size: 20px;
+        margin: 0px 15px;
+    }
+
+    nav ul li a,
+    #search,
+    #head {
+
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li:hover {
+
+        padding-bottom: 1%;
+        border-bottom: 2px solid #f54b42;
+    }
+
+    #home,
+    #head {
+
+        padding-bottom: 1%;
+        border-bottom: 2px solid #f54b42;
+    }
+
+    #head {
+        border-bottom: 5px solid #f54b42;
+        margin-top: -60px;
+        margin-left: 5%;
+        margin-right: 15%;
+        min-width: 50px;
+        font-size: 40px;
+    }
+
+    #stat {
+        border-bottom: 5px hidden #f54b42;
+    }
+
+    header h1 {
+
+        color: white;
+        font-size: 20px;
+        visibility: hidden;
+    }
+
+    #search {
+
+        cursor: pointer;
+    }
+
+    .main {
+
+        color: white;
+        margin-left: 10%;
+        margin-top: 70px;
+    }
+
+    #name {
+
+        font-size: 40px;
+        padding-bottom: 10px;
+        /* border-bottom:5px solid #424ef5; */
+    }
+
+    .main span {
+
+        font-size: 40px;
+    }
+
+    .main article span,
+    #motive {
+
+        text-align: left;
+        font-size: 25px;
+    }
+    #border1{
+        border-bottom: 5px solid blue;
+    }
+    #border2{
+        border-bottom: 5px solid #42f563;
+    }
+    #motive {
+        text-align: left;
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    footer {
+
+        color: white;
+        text-align: center;
+        margin-top: 5%;
+        border-top: 5px solid #f57242;
+        padding-top: 2%;
+    }
+
+    section a {
+
+        color: white;
+        font-size: 40px;
+        margin-right: 1.5%;
+        text-decoration: none;
+    }
+
+    footer h1 {
+        margin-bottom: 1%
+    }
+
+    .list ul li {
+
+        list-style: none;
+        font-size: 20px;
+        line-height: 30px;
+    }
 </style>
 
 <body>
     <header>
-        <h1>Hello World</h1>
         <nav>
-            <span><a href="#" id="head">&#10024; &nbsp; Cool Calm Coder</a></span>
+            <h1>Hello</h1>
+            <span>
+                <a href="#" id="head"><img
+                        src="https://cdn0.iconfinder.com/data/icons/bitcoin-cryptocurrency-lavender-vol-2-1/512/cypherpunk-512.png"
+                        alt="" id="logo"><span id="">Cool Calm Coder</span></a></span>
             <ul>
                 <li id="home"><a href="#"> Home</a></li>
                 <li><a href="#">About</a></li>
@@ -148,8 +201,10 @@ footer h1{
     <br>
     <br>
     <div class="main">
-        <span>&#10023; &nbsp; </span>
-        <strong> Dhanraj Chaurasia</strong>
+        <br>
+        <br>
+        <br>
+        <div><span id="name">&#10023; &nbsp; <span id="border1"> Dhanraj Chaurasia</span></div>
         <br>
         <br>
         <article>
@@ -158,11 +213,13 @@ footer h1{
         </article> <br><br><br><br>
         <div class="list">
             <ul>
-                <span>&#10023; &nbsp; </span>
-                <span id="motive"> Motivational Thoughts</span> <br><br><br>
+
+                <div><span id="motive">&#10023; &nbsp; <span id="border2"> Motivational Thoughts</span></div>
+                <br><br>
                 <li>&#10022; &nbsp; Do not wait for tomorrow, because tomorrow<br> does not wait for you. Therefore
                     tomorrow always comes tomorrow.</li><br>
-                <li>&#10022; &nbsp; Weak people stumble and fall, But who tries to complete<br> the aim then makes history.
+                <li>&#10022; &nbsp; Weak people stumble and fall, But who tries to complete<br> the aim then makes
+                    history.
                 </li><br>
                 <li>&#10022; &nbsp; No matter how high the goal is, but the paths are always below their feet.</li><br>
                 <li>&#10022; &nbsp; “ Mistake ”
@@ -170,15 +227,21 @@ footer h1{
                 <li>&#10022; &nbsp; “AIM”
                     It should be such that one does not even sleep to complete it.</li><br>
                 <li>&#10022; &nbsp; Light then illuminates, when it burns like fire. Similarly, the more you rub
-                <br>yourself, so you will shine the more…</li><br>
+                    <br>yourself, so you will shine the more…
+                </li><br>
                 <li>&#10022; &nbsp; The value of time is realized by utilizing time.</li><br>
-                <li>&#10022; &nbsp; “Goodness” Do it like running water because evil is the trash that automatically comes out of the water.</li> <br>
-                <li>&#10022; &nbsp; To be successful, first, you have to dream of your success that refuses to sleep at night.</li> <br>
-                <li>&#10022; &nbsp; Win and to lose depends on you, If you agree, you lose and If you are determined then you win</li> <br>
-                <li>&#10022; &nbsp; Success makes us familiar with the whole world. Where as failure introduces us to the whole world</li> <br>
+                <li>&#10022; &nbsp; “Goodness” Do it like running water because evil is the trash that automatically
+                    comes out of the water.</li> <br>
+                <li>&#10022; &nbsp; To be successful, first, you have to dream of your success that refuses to sleep at
+                    night.</li> <br>
+                <li>&#10022; &nbsp; Win and to lose depends on you, If you agree, you lose and If you are determined
+                    then you win</li> <br>
+                <li>&#10022; &nbsp; Success makes us familiar with the whole world. Where as failure introduces us to
+                    the whole world</li> <br>
                 <li>&#10022; &nbsp; Mistake is a sign of your effort. Success is your sign.</li> <br>
                 <li>&#10022; &nbsp; To win you must be motivated because one fear is enough to lose you.</li> <br>
-                <li>&#10022; &nbsp;  If you are making more effort today than your earnings then <br> Keep the faith, you will be able to earn more than your effort in the future.</li> <br>
+                <li>&#10022; &nbsp; If you are making more effort today than your earnings then <br> Keep the faith, you
+                    will be able to earn more than your effort in the future.</li> <br>
             </ul>
         </div>
         <!-- <img src="/Github Website/Images/dark-hacker.jpg" alt=""> -->

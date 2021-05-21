@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- External CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Home | Cool Calm Coder</title>
+    <link rel="icon" type="image/icon" href="./icons/logo.png">
+</head>
+<style>
+    .msg {
+        margin: 1%;
+        width: 650px;
+    }
+
+    #aboutme {
+        position: absolute;
+        right: 0px;
+        top: 80px;
+        margin: 2% 1% 0% 2%;
+        display: inline-block;
+    }
+
+    .box-card {
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .contain {
+        width: 80%;
+        margin: 20px;
+    }
+
+    .links {
+        color: #212529;
+        text-decoration: none;
+    }
+
+    .links:hover {
+        color: #3b5998;
+    }
+
+    #brand-head {
+        position: relative;
+        top: 7px;
+        font-size: 25px;
+        margin: auto 20px;
+    }
+
+    #logo-head {
+        height: 60px;
+        margin-top: -10px;
+    }
+
+    .contact-me {
+        width: 100px;
+    }
+
+    /* Responsive */
+    @media only screen and (max-width: 985px) {
+        .cards{
+            width: 60% !important;
+        }
+        .msg{
+            width: 50% !important;
+        }
+        .contain{
+            margin: 5px;
+        }
+    }
+    @media only screen and (max-width: 655px) {
+        .cards{
+            width: 100% !important;
+            text-align: center;
+            margin: 1% 10%;
+        }
+        #aboutme{
+            position: relative;
+            top: 0;
+            left: 15%;
+        }
+        .msg{
+            width: 98% !important;
+        }
+        #login{
+            width: 80% !important;
+            text-align: center;
+            margin-left: -22px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./icons/logo.png" alt="" id="logo-head"
+                    class="d-inline-block align-text-top"><span id="brand-head">Cool Calm Coder</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactme">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Know More</a></li>
+                            <li><a class="dropdown-item" href="#">Features</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Login Here</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                    </li> -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-warning alert-dismissible fade show msg" role="alert">
+        <strong>Hello Guys!</strong> Thanks for visiting my website. <strong>Your Welcome.</strong><a href="#"
+            class="alert-link" style="margin-left: 2%;font-weight: 400; text-decoration: none;">Explore Here..</a>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="contain">
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+    </div>
+    <aside id="aboutme">
+        <div class="card" id="test" style="width: 18rem;">
+            <img src="./icons/Profile.png" class="card-img-top" alt="...">
+            <div id="contained">
+                <div class="card-body card1">
+                    <h4 class="card-title">Dhanraj Chaurasia</h4>
+                    <h6 class="card-title">Cool Calm Coder | Coder Dhanraj</h6>
+                    <hr>
+                    <p class="card-text">An enthusiast frontend web developer, programmer (coder) and software
+                        developer.
+                        Enthusiast to learn new things and a quick learner to develop more skills.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="https://github.com/dhanrajchaurasia" target="_blank"
+                            class="links">Github Profile <i class="fab fa-github"
+                                style="font-size: 25px; position: absolute; right: 30px; color:#211F1F;"></i></a></li>
+                    <li class="list-group-item"><a href="https://codeforces.com/profile/coderdhanraj" target="_blank"
+                            class="links">Codeforces Profile<img src="./icons/codeforces.png" alt=""
+                                style="width: 30px; position: absolute; right: 30px; "></a></li>
+                    <li class="list-group-item"><a href="https://www.codechef.com/users/coderdhanraj" target="_blank"
+                            class="links">Codechef Profile<img
+                                src="./icons/codechef.png"
+                                alt="" style="width: 30px; position: absolute; right: 30px; "></a></li>
+                    <li class="list-group-item"><a href="https://www.hackerrank.com/mnnitdhanraj" target="_blank"
+                            class="links">Hackerrank Proflie<i class="fab fa-hackerrank"
+                                style="font-size: 25px; position: absolute; right: 30px; color:#16a085;"></i></a></li>
+                    <li class="list-group-item"><a href="#" class="links">Linkedin Profile<i class="fab fa-linkedin"
+                                style="font-size: 25px; position: absolute; right: 30px; color:#0077b5;"></i></a></li>
+                    <li class="list-group-item"><a href="https://www.instagram.com/dhanraj.chaurasia" target="_blank"
+                            class="links">Instagram Profile<i class="fab fa-instagram"
+                                style="font-size: 25px; position: absolute; right: 30px; color:#8a3ab9;"></i></a></li>
+                    <li class="list-group-item"><a href="https://www.facebook.com/dhanraj.chaurasia.18" target="_blank"
+                            class="links">Facaebook Profile<i class="fab fa-facebook"
+                                style="font-size: 25px; position: absolute; right: 30px; color: #3b5998;"></i></a></li>
+                </ul>
+                <!-- <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div> -->
+            </div>
+        </div>
+        <div class="card text-center box-card" style="width: 16rem;" id="login">
+            <div class="card-body">
+                <h5 class="card-title">Login to Explore More!</h5>
+                <p class="card-text">New skills are waiting for you then what you are looking for Login Here..</p>
+                <button type="button" class="btn btn-success">Login Here</button>
+            </div>
+        </div>
+    </aside>
+    <script src="https://kit.fontawesome.com/52af1fdfbc.js" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: External Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and External JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -2,6 +2,9 @@
     margin: 1%;
     width: 650px;
 }
+    .card-title {
+        text-align: center !important;
+    }
 
 #aboutme {
     position: absolute;
@@ -114,9 +117,5 @@ footer {
     #test {
         margin: 2% 12% !important;
         width: 80% !important;
-    }
-
-    .card-title {
-        text-align: center !important;
     }
 }

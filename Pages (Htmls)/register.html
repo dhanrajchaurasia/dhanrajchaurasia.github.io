@@ -58,11 +58,11 @@
     <div class="contains shadow p-3 mb-5 bg-body rounded">
       <h3 class="text-center mb-3" style="color: #303336;">Register / Signup</h3>
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="floatingInput" placeholder="Full Name" name="fullname">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Full Name" required name="fullname">
         <label for="floatingInput"><span style="color: #6c757d;">Full Name</span></label>
       </div>
       <div class="form-floating">
-        <input type="text" class="form-control" id="floatingInput" placeholder="Full Name" name="username">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Full Name" required name="username">
         <label for="floatingInput"><span style="color: #6c757d;">Userame</span></label>
       </div>
       <div class="col-auto mb-3">
@@ -71,7 +71,7 @@
         </span>
       </div>
       <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="Email Address" name="email">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Email Address" required name="email">
         <label for="floatingInput"><span style="color: #6c757d;">Email address</span></label>
       </div>
       <div class="col-auto mb-3">
@@ -80,7 +80,7 @@
         </span>
       </div>
       <div class="form-floating mb-3">
-        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="gender">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" required name="gender">
           <option selected>Select</option>
           <option value="1">Male</option>
           <option value="2">Female</option>
@@ -89,7 +89,7 @@
         <label for="floatingSelect">Select Your Gender</label>
       </div>
       <div>
-        <input class="form-control" type="file" id="formFile" name="photo">
+        <input class="form-control" type="file" id="formFile" required name="photo">
       </div>
       <div class="col-auto mb-3">
         <span id="passwordHelpInline" class="form-text">
@@ -97,7 +97,7 @@
         </span>
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+        <input type="password" class="form-control" id="password" placeholder="Password" required name="password">
         <label for="floatingPassword"><span style="color: #6c757d;">Password</span></label>
         <i class="far fa-eye float-end" id="togglePassword"></i>
       </div>
@@ -108,7 +108,7 @@
       </div>
       <div class="form-floating mb-3">
         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-          style="height: 100px" name="discription"></textarea>
+          style="height: 100px" required name="discription"></textarea>
         <label for="floatingTextarea2"><span style="color: #6c757d;">Add a discription about yourself. It will be
             displaced in your profile.</span></label>
       </div>

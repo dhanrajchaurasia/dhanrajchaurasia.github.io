@@ -15,8 +15,9 @@
     <!-- CSS Import -->
     <link rel="stylesheet" href="./CSS/index.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./icons/logo.png" alt="" id="logo-head" class="d-inline-block align-text-top"><span
@@ -28,31 +29,34 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#aboutme">About</a>
+                        <a class="nav-link" href="#about-me">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactme">Contact</a>
+                        <a class="nav-link" href="#contact-me">Contact</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            More
-                        </a>
+                            More</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Know More</a></li>
                             <li><a class="dropdown-item" href="#">Features</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Login Here</a></li>
+                            <li><a class="dropdown-item" href="./Pages (Htmls)/register.html">Register Here&nbsp;<i class="fas fa-user-plus" style="font-size: 18px;"></i></a></li>
+                            <li><a class="dropdown-item" href="./Pages (Htmls)/login.html">Login Here&nbsp;<i class="fas fa-sign-in-alt" style="font-size: 20px;"></i></a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:120%; margin-top: -4px;" href="./Pages (Htmls)/login.html">
+                            Get Started</a>
+                    </li>
                     <!-- <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
-                    </li> -->
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                </li> -->
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -66,118 +70,150 @@
             class="alert-link" style="margin-left: 2%;font-weight: 400; text-decoration: none;">Explore Here..</a>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
-    <div class="contain">
+    <div id="contain">
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <img src="./icons/logo.png" alt="" style="width: 30px;"><br>
+                <h5 class="card-title">About Me</h5>
+                <p class="card-text">Know more about me, my projects and repositories. You can follow me from here.</p>
+                <button type="button" class="btn btn-dark"><a style="color: #fff; text-decoration: none;" href="https://github.com/dhanrajchaurasia" target="_blank">Explore Me</a></button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <img src="./icons/education-project.png" alt="" style="width: 30px;"><br>
+                <h5 class="card-title">EducationMania</h5>
+                <p class="card-text">An educational project especially made for engineers students, containing all the
+                resources.</p>
+                <button type="button" class="btn btn-success"><a style="color: #fff; text-decoration: none;"
+                href="https://devfolio.co/submissions/educationmania-5775" target="_blank">Explore
+                EducationMania</a></button>
+            </div>
+        </div>
+        <div class="card text-center box-card cards" style="width: 18rem;">
+            <div class="card-body">
+                <img src="./icons/diagnosis.png" alt="" style="width: 30px;"><br>
+                <h5 class="card-title">Diagnosis Tracker</h5>
+                <p class="card-text">An diagnosis project which keeps your all medical details safe with easy face
+                    <span id="about-me"></span>
+                    recognition login.</p>
+                    <button type="button" class="btn btn-primary"><a style="color: #fff; text-decoration: none;" href=""
+                        target="_blank">Explore Diagnosis Tracker</a></button>
+                    </div>
+                </div>
+                <div class="card text-center box-card cards" style="width: 18rem;">
+                    <div class="card-body">
+                        <img src="./icons/codeforces.png" alt="" style="width: 30px;"><br>
+                        <h5 class="card-title">Codeforces Solutions</h5>
+                        <p class="card-text">Here you can find the solutions of codeforces problem sets.</p>
+                        <button type="button" class="btn btn-danger"><a style="color: #fff; text-decoration: none;" href=""
+                            target="_blank">Explore Codeforces Solutions</a></button>
+                        </div>
+                        <span id="contact-me"></span>
+                    </div>
+                    <div class="card text-center box-card cards" style="width: 18rem;">
+                        <div class="card-body">
+                    <img src="./icons/codechef.png" alt="" style="width: 30px;"><br>
+                    <h5 class="card-title">Codechef Solutions</h5>
+                    <p class="card-text">Here you can find the solutions of codechef problem sets.</p>
+                    <button type="button" class="btn btn-primary"><a style="color: #fff; text-decoration: none;"
+                        href="https://github.com/dhanrajchaurasia/Codechef-Problem-Solutions" target="_blank">Explore
+                        Codechef Solutions</a></button>
+                    </div>
+                </div>
+                <div class="card text-center box-card cards" style="width: 18rem;">
+                    <div class="card-body"><i class="fab fa-hackerrank"
+                style="font-size: 30px;color:#198754;"></i><br>
+                <h5 class="card-title">Hackerrank Solutions</h5>
+                <p class="card-text">Here you can find the solutions of hackerrank problem sets.</p>
+                <button type="button" class="btn btn-success"><a style="color: #fff; text-decoration: none;"
+                    href="https://github.com/dhanrajchaurasia/Codechef-Problem-Solutions" target="_blank">Explore
+                    Codechef Solutions</a></button>
+                </div>
+            </div>
+            <div class="card text-center box-card cards" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Informations</h5>
+                    <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-primary"><a style="color: #fff; text-decoration: none;" href=""
+                    target="_blank">Explore</a></button>
+                </div>
+            </div>
         <div class="card text-center box-card cards" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Informations</h5>
                 <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
+                <button type="button" class="btn btn-primary"><a style="color: #fff; text-decoration: none;" href=""
+                    target="_blank">Explore</a></button>
+                </div>
+            </div>
+            <div class="card text-center box-card cards" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">Informations</h5>
+                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
+                <button type="button" class="btn btn-primary"><a style="color: #fff; text-decoration: none;" href=""
+                    target="_blank">Explore</a></button>
             </div>
         </div>
         <div class="card text-center box-card cards" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Informations</h5>
                 <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
+                <button type="button" class="btn btn-primary"><a style="color: #fff; text-decoration: none;" href=""
+                        target="_blank">Explore</a></button>
             </div>
         </div>
         <div class="card text-center box-card cards" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Informations</h5>
                 <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
+                <button type="button" class="btn btn-primary"><a style="color: #fff; text-decoration: none;" href=""
+                        target="_blank">Explore</a></button>
             </div>
         </div>
         <div class="card text-center box-card cards" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Informations</h5>
                 <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
+                <button type="button" class="btn btn-primary"><a style="color: #fff; text-decoration: none;" href=""
+                        target="_blank">Explore</a></button>
             </div>
         </div>
         <div class="card text-center box-card cards" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Informations</h5>
                 <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
+                <button type="button" class="btn btn-primary"><a style="color: #fff; text-decoration: none;" href=""
+                        target="_blank">Explore</a></button>
             </div>
         </div>
         <div class="card text-center box-card cards" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Informations</h5>
                 <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
+                <button type="button" class="btn btn-primary"><a style="color: #fff; text-decoration: none;" href=""
+                        target="_blank">Explore</a></button>
             </div>
         </div>
         <div class="card text-center box-card cards" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Informations</h5>
                 <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
-            </div>
-        </div>
-        <div class="card text-center box-card cards" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Informations</h5>
-                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
-            </div>
-        </div>
-        <div class="card text-center box-card cards" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Informations</h5>
-                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
-            </div>
-        </div>
-        <div class="card text-center box-card cards" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Informations</h5>
-                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
-            </div>
-        </div>
-        <div class="card text-center box-card cards" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Informations</h5>
-                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
-            </div>
-        </div>
-        <div class="card text-center box-card cards" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Informations</h5>
-                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
-            </div>
-        </div>
-        <div class="card text-center box-card cards" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Informations</h5>
-                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
-            </div>
-        </div>
-        <div class="card text-center box-card cards" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Informations</h5>
-                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
-            </div>
-        </div>
-        <div class="card text-center box-card cards" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Informations</h5>
-                <p class="card-text">Here we will learn new skill till then Stay Safe Stay Healthy.</p>
-                <button type="button" class="btn btn-outline-primary">Know More</button>
+                <button type="button" class="btn btn-primary"><a style="color: #fff; text-decoration: none;"
+                        href="https://github.com/dhanrajchaurasia/Codeforces-Problem-Solutions"
+                        target="_blank">Explore</a></button>
             </div>
         </div>
     </div>
     <aside id="aboutme">
+        <ul class="list-group list-group-flush">
+        </ul>
         <div class="card" id="test" style="width: 18rem;">
             <img src="./icons/hacker-profile.png" class="card-img-top" alt="...">
             <div id="contained">
                 <div class="card-body card1">
+                    <li class="card-title text-center"style="font-size: 22px; font-weight: 500; list-style: none;">About Me</li>
+                    <hr>
                     <h4 class="card-title">Dhanraj Chaurasia</h4>
                     <h6 class="card-title">Cool Calm Coder | Coder Dhanraj</h6>
                     <hr>
@@ -186,46 +222,52 @@
                         Enthusiast to learn new things and a quick learner to develop more skills.</p>
                 </div>
                 <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center" style="font-size: 20px; font-weight: 500; ">
+                        Contact Me</li>
                     <li class="list-group-item"><a href="https://github.com/dhanrajchaurasia" target="_blank"
-                            class="links">Github Profile <i class="fab fa-github"
+                            id="git">Github Profile <i class="fab fa-github"
                                 style="font-size: 25px; position: absolute; right: 30px; color:#211F1F;"></i></a></li>
                     <li class="list-group-item"><a href="https://codeforces.com/profile/coderdhanraj" target="_blank"
-                            class="links">Codeforces Profile<img src="./icons/codeforces.png" alt=""
+                            id="code">Codeforces Profile<img src="./icons/codeforces.png" alt=""
                                 style="width: 30px; position: absolute; right: 30px; "></a></li>
                     <li class="list-group-item"><a href="https://www.codechef.com/users/coderdhanraj" target="_blank"
-                            class="links">Codechef Profile<img src="./icons/codechef.png" alt=""
+                            id="chef">Codechef Profile<img src="./icons/codechef.png" alt=""
                                 style="width: 30px; position: absolute; right: 30px; "></a></li>
                     <li class="list-group-item"><a href="https://www.hackerrank.com/mnnitdhanraj" target="_blank"
-                            class="links">Hackerrank Proflie<i class="fab fa-hackerrank"
-                                style="font-size: 25px; position: absolute; right: 30px; color:#16a085;"></i></a></li>
+                            id="hack">Hackerrank Proflie<i class="fab fa-hackerrank"
+                                style="font-size: 25px; position: absolute; right: 30px; color:#198754;"></i></a></li>
                     <li class="list-group-item"><a href="https://linkedin.com/in/dhanraj-chaurasia-4309b9207"
-                            target="_blank" class="links">Linkedin Profile<i class="fab fa-linkedin"
+                            target="_blank" id="linkedin">Linkedin Profile<i class="fab fa-linkedin"
                                 style="font-size: 25px; position: absolute; right: 30px; color:#0077b5;"></i></a></li>
                     <li class="list-group-item"><a href="https://www.instagram.com/dhanraj.chaurasia" target="_blank"
-                            class="links">Instagram Profile<i class="fab fa-instagram"
-                                style="font-size: 25px; position: absolute; right: 30px; color:#8a3ab9;"></i></a></li>
+                            id="insta">Instagram Profile<i class="fab fa-instagram"
+                                style="font-size: 25px; position: absolute; right: 30px; color:#d63384;"></i></a></li>
                     <li class="list-group-item"><a href="https://www.facebook.com/dhanraj.chaurasia.18" target="_blank"
-                            class="links">Facaebook Profile<i class="fab fa-facebook"
+                            id="fb">Facebook Profile<i class="fab fa-facebook"
                                 style="font-size: 25px; position: absolute; right: 30px; color: #3b5998;"></i></a></li>
+                    <li class="list-group-item"><a href="https://devfolio.co/@coderdhanraj" target="_blank"
+                            id="devfolio">Devfolio Profile<img src="./icons/devfolio.png" alt=""
+                                style="width: 25px; position: absolute; right: 30px; "></a></li>
                 </ul>
                 <!-- <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Card link</a>
                 <a href="#" class="card-link">Another link</a>
             </div> -->
             </div>
         </div>
         <div class="card text-center box-card" style="width: 16rem;" id="login">
             <div class="card-body">
-                <h5 class="card-title">Login to Explore More!</h5>
-                <p class="card-text">New skills are waiting for you then what you are looking for Login Here..</p>
-                <!-- <button type="button" class="btn btn-success">Login Here</button> -->
+                <h5 class="card-title"><i class="fas fa-user-plus" style="font-size: 18px;"></i> Register to Explore More!</h5>
+                <p class="card-text">New skills are waiting for you then what you are looking for Register Here..</p>
+                <!-- <button type="button" class="btn btn-success">Register Here</button> -->
                 <button type="button" class="btn btn-lg btn-success" data-bs-toggle="popover" data-placement=""
-                    title="This Page is unavailable now." data-bs-content="Not">Log in</button>
+                    title="This Page is unavailable now." data-bs-content="Not"><a href="./Pages (Htmls)/register.html"
+                        style="color: #fff; text-decoration: none;">Register Now!</a></button>
             </div>
         </div>
     </aside>
     <nav aria-label="...">
-        <ul class="pagination" style="position: relative; left: 50px;">
+        <ul class="pagination text-center" style="position: relative; left: 50px; margin: 10px auto;">
             <li class="page-item disabled">
                 <span class="page-link">Previous</span>
             </li>
@@ -242,6 +284,8 @@
     <footer class="text-center">
         <h4 style="margin: 1%; font-size: 20px;"> Copyright &copy;2020-24. All Right Reserved.</h4>
     </footer>
+
+    <!-- Font Awesme JavaScript -->
     <script src="https://kit.fontawesome.com/52af1fdfbc.js" crossorigin="anonymous"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->

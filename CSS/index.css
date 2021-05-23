@@ -19,18 +19,39 @@
     margin: 20px;
 }
 
-.contain {
+#contain {
     width: 80%;
     margin: 20px;
 }
 
-.links {
+#git, #code, #chef, #hack, #fb, #insta, #linkedin, #devfolio {
     color: #212529;
     text-decoration: none;
 }
 
-.links:hover {
-    color: #3b5998;
+#git:hover {
+    color:#6c757d;
+}
+#code:hover {
+    color:#fd7e14;
+}
+#chef:hover {
+    color:#6c757d;
+}
+#hack:hover {
+    color:#198754;
+}
+#linkedin:hover {
+    color:#0077b5;
+}
+#insta:hover {
+    color:#d63384;
+}
+#fb:hover {
+    color:#3b5998;
+}
+#devfolio:hover {
+    color:#3770ff;
 }
 
 #brand-head {
@@ -60,7 +81,7 @@ footer {
     .cards {
         width: 40% !important;
     }
-    .contain {
+    #contain {
         width: 78%;
         margin: 20px;
     }
@@ -70,7 +91,7 @@ footer {
     .cards {
         width: 40% !important;
     }
-    .contain {
+    #contain {
         width:70%;
         margin: 20px;
     }
@@ -83,7 +104,7 @@ footer {
     .cards {
         width: 75% !important;
     }
-    .contain {
+    #contain {
         width:70%;
         margin: 20px;
     }

@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./CSS/index.css">
 </head>
 
-<body>
+<body onload="myloading()">
+    <div id="loading"><span>Loading</span></div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
@@ -28,29 +29,32 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
+                    <li class="nav-item hover-eff">
                         <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hover-eff">
                         <a class="nav-link" href="#about-me">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hover-eff">
                         <a class="nav-link" href="#contact-me">Contact</a>
+                    </li>
+                    <li class="nav-item hover-eff">
+                        <a class="nav-link" id="themee" onclick="themechange()">Dark Theme</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             More</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Features</a></li>
+                        <ul class="dropdown-menu dropdown-aa" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item dropdown-aa" href="#">Features</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="./register.html">Register Here&nbsp;<i class="fas fa-user-plus" style="font-size: 18px;"></i></a></li>
-                            <li><a class="dropdown-item" href="./login.html">Login Here&nbsp;<i class="fas fa-sign-in-alt" style="font-size: 20px;"></i></a></li>
+                            <li><a class="dropdown-item dropdown-aa" href="./register.html">Register Here&nbsp;<i class="fas fa-user-plus" style="font-size: 18px;"></i></a></li>
+                            <li><a class="dropdown-item dropdown-aa" href="./login.html">Login Here&nbsp;<i class="fas fa-sign-in-alt" style="font-size: 20px;"></i></a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hover-eff">
                         <a class="nav-link" style="font-size:120%; margin-top: -4px;" href="./login.html">
                             Get Started</a>
                     </li>
@@ -266,25 +270,19 @@
             </div>
         </div>
     </aside>
-    <nav aria-label="...">
-        <ul class="pagination text-center" style="position: relative; left: 50px; margin: 10px auto;">
-            <li class="page-item disabled">
-                <span class="page-link">Previous</span>
-            </li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item" aria-current="page">
-                <span class="page-link">2</span>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
-        </ul>
-    </nav>
     <footer class="text-center">
         <h4 style="margin: 1%; font-size: 20px;"> Copyright &copy;2020-24. All Right Reserved.</h4>
     </footer>
 
+        <!-- JavaScript -->
+        <script>
+        var preloader = document.getElementById('loading');
+        function myloading(){
+            preloader.style.display = "none";
+        }
+    </script>
+    <!-- JavaScript -->
+    <script src="./JavaScript/index.js"></script>
     <!-- Font Awesme JavaScript -->
     <script src="https://kit.fontawesome.com/52af1fdfbc.js" crossorigin="anonymous"></script>
 

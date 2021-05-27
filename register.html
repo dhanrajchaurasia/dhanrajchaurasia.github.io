@@ -11,7 +11,7 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
   <title>Register | Cool Calm Coder</title>
-  <link rel="icon" type="image/icon" href="../icons/logo.png">
+  <link rel="icon" type="image/icon" href="./icons/logo.png">
   <!-- CSS Import -->
   <link rel="stylesheet" href="./CSS/login-signup.css">
 </head>
@@ -19,8 +19,8 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid" style="position: sticky !important; top: 0;">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../icons/logo.png" alt="" id="logo-head" class="d-inline-block align-text-top"><span
+      <a class="navbar-brand" href="./index.html">
+        <img src="./icons/logo.png" alt="" id="logo-head" class="d-inline-block align-text-top"><span
           id="brand-head">Cool Calm Coder</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
         aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,18 +28,21 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          <li class="nav-item hover-eff">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#about-me">About</a>
+          <li class="nav-item hover-eff">
+            <a class="nav-link" href="./index.html#about-me">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#contact-me">Contact</a>
+          <li class="nav-item hover-eff">
+            <a class="nav-link" href="./index.html#contact-me">Contact</a>
+          </li>
+          <li class="nav-item hover-eff">
+            <a class="nav-link" id="themee" onclick="themechange()">Dark Theme</a>
           </li>
           <!-- <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
-                    </li> -->
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+          </li> -->
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -50,13 +53,13 @@
   </nav>
   <nav class="recent" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">Register</li>
     </ol>
   </nav>
   <form action="login.php">
-    <div class="contains shadow p-3 mb-5 bg-body rounded">
-      <h3 class="text-center mb-3" style="color: #303336;">Register / Signup</h3>
+    <div class="contains shadow p-3 mb-5 bg-body rounded" id="form-box">
+      <h3 class="text-center mb-3" style="color: #303336;">Creat An Account</h3>
       <div class="form-floating mb-3">
         <input type="text" class="form-control" id="floatingInput" placeholder="Full Name" required name="fullname">
         <label for="floatingInput"><span style="color: #6c757d;">Full Name</span></label>
@@ -80,7 +83,8 @@
         </span>
       </div>
       <div class="form-floating mb-3">
-        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" required name="gender">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" required
+          name="gender">
           <option selected>Select</option>
           <option value="1">Male</option>
           <option value="2">Female</option>
@@ -107,19 +111,19 @@
         </span>
       </div>
       <div class="form-floating mb-3">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-          style="height: 100px" required name="discription"></textarea>
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"
+          required name="discription"></textarea>
         <label for="floatingTextarea2"><span style="color: #6c757d;">Add a discription about yourself. It will be
             displaced in your profile.</span></label>
       </div>
       <div class="col-12 mb-3 text-center">
         <!-- <button class="btn btn-primary" type="submit" style="width: 30%; font-size: 20px;">Submit</button> -->
-        <button type="button" class="name-button btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal"
-        data-name="Joe">Submit</button>
+        <button type="button" class="name-button btn btn-primary btn-lg" data-bs-toggle="modal"
+          data-bs-target="#exampleModal" data-name="Joe">Creat Account</button>
       </div>
     </div>
   </form>
-  
+
   <!-- The Modal Itself  -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -134,19 +138,19 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-success"><a href="./index.html"
-            style="color: #fff; text-decoration: none;">Go Back to Home</a></button>
+              style="color: #fff; text-decoration: none;">Go Back to Home</a></button>
         </div>
       </div>
     </div>
   </div>
-  
+
   <footer class="text-center">
     <h4 style="margin: 1%; font-size: 20px;"> Copyright &copy;2020-24. All Right Reserved.</h4>
   </footer>
   <!-- Font Awesme JavaScript -->
   <script src="https://kit.fontawesome.com/52af1fdfbc.js" crossorigin="anonymous"></script>
   <!-- Import JS -->
-  <script src="../JavaScript/login-signup.js"></script>
+  <script src="./JavaScript/login-signup.js"></script>
 
   <!-- Optional JavaScript; choose one of the two! -->
 

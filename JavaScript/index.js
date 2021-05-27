@@ -16,12 +16,14 @@ function themechange() {
     var theme = document.getElementById('themee');
     var dropdown = document.getElementsByClassName('dropdown-aa');
     var search = document.getElementsByClassName('form-control');
+    var load = document.getElementById('loading');
     // var m = document.getElementsByClassName('d-flex input:focus');
     if (x % 2 == 0) {
         for (let i = 0; i < cards.length; i++) {
             cards[i].style.backgroundColor = "#000";
             cards[i].style.border = "1px solid #383d40";
         }
+        load.style.backgroundColor = "#000";
         theme.innerText = "Light Theme";
         test.style.backgroundColor = "#272a2c";
         test.style.color = "#d1cdc7";
@@ -50,6 +52,7 @@ function themechange() {
         }
     }
     else {
+        load.style.backgroundColor = "#fff";
         theme.innerText = "Dark Theme";
         test.style.backgroundColor = "#fff";
         test.style.color = "#212529";

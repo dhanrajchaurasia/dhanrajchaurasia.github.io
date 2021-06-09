@@ -2,6 +2,13 @@
     background-color: #fff;
     color: #212529;
 }
+.buttonget{
+    color: #198754; 
+    text-decoration: none;
+}
+.buttonget a:hover{
+    color: #fff; 
+}
 #themee{
     cursor: pointer;
     color: #dfdfdf;
@@ -128,10 +135,20 @@ footer {
         margin: 20px;
     }
     .msg {
-        width: 45% !important;
+        width: 65% !important;
     }
 }
 
+@media only screen and (max-width: 990px) {
+    .buttonget{
+        padding: 2px;
+        position: absolute !important;
+        top: 20px;
+        right: 100px;
+        height: 45px !important;
+        width: 100px;
+    }
+}
 @media only screen and (max-width: 913px) {
     .cards {
         width: 75% !important;
@@ -141,7 +158,14 @@ footer {
         margin: 20px;
     }
     .msg {
-        width: 45% !important;
+        width: 58% !important;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .buttonget{
+        position: relative;
+        top: 70px;
+        right: 40%;
     }
 }
 @media only screen and (max-width: 744px) {
@@ -150,23 +174,19 @@ footer {
         text-align: center;
         margin: 1% 20%;
     }
-    
     #aboutme {
         margin: 0 auto;
         position: static;
     }
-    
     .msg {
         width: 98% !important;
     }
-
     #login {
         position: inherit;
         width: 90% !important;
         text-align: center;
         margin: 10% 6% !important;
     }
-
     #test {
         margin: 2% 12% !important;
         width: 80% !important;

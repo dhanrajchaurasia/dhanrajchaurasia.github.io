@@ -1,4 +1,3 @@
-// var n = document.getElementsByClassName('list-group-item');
 var x = 0;
 function themechange() {
     var body = document.getElementsByTagName('body');
@@ -17,12 +16,17 @@ function themechange() {
     var dropdown = document.getElementsByClassName('dropdown-aa');
     var search = document.getElementsByClassName('form-control');
     var load = document.getElementById('loading');
+    var button = document.getElementsByClassName('btn-outline-primary');
+    var button2 = document.getElementsByClassName('btn-outline-success');
+    var button3 = document.getElementsByClassName('btn-outline-danger');
+    var button4 = document.getElementsByClassName('btn-outline-dark');
     // var m = document.getElementsByClassName('d-flex input:focus');
     if (x % 2 == 0) {
         for (let i = 0; i < cards.length; i++) {
             cards[i].style.backgroundColor = "#000";
             cards[i].style.border = "1px solid #383d40";
         }
+        // Make theme Dark
         load.style.backgroundColor = "#000";
         theme.innerText = "Light Theme";
         test.style.backgroundColor = "#272a2c";
@@ -50,8 +54,50 @@ function themechange() {
             element.style.backgroundColor = "#000";
             element.style.border = "1px solid #3c4144";
         }
+        for (let i = 0; i < button.length; i++) {
+            const element = button[i];
+            element.classList.remove('btn-primary');
+            element.classList.add('btn-outline-primary');
+        }
+        for (let i = 1; i < button2.length; i++) {
+            const element = button2[i];
+            element.classList.add('btn-outline-success');
+            if (x > 1)
+                element.classList.remove('btn-success');
+        }
+        for (let i = 0; i < button3.length; i++) {
+            const element = button3[i];
+            element.classList.remove('btn-danger');
+            element.classList.add('btn-outline-danger');
+        }
+        for (let i = 0; i < button4.length; i++) {
+            const element = button4[i];
+            element.classList.remove('btn-dark');
+            element.classList.add('btn-outline-dark');
+        }
     }
     else {
+        // Make theme Light
+        for (let i = 0; i < button.length; i++) {
+            const element = button[i];
+            element.classList.remove('btn-outline-primary');
+            element.classList.add('btn-primary');
+        }
+        for (let i = 1; i < button2.length; i++) {
+            const element = button2[i];
+            element.classList.remove('btn-outline-success');
+            element.classList.add('btn-success');
+        }
+        for (let i = 0; i < button3.length; i++) {
+            const element = button3[i];
+            element.classList.remove('btn-outline-danger');
+            element.classList.add('btn-danger');
+        }
+        for (let i = 0; i < button4.length; i++) {
+            const element = button4[i];
+            element.classList.remove('btn-outline-dark');
+            element.classList.add('btn-dark');
+        }
         load.style.backgroundColor = "#fff";
         theme.innerText = "Dark Theme";
         test.style.backgroundColor = "#fff";
@@ -84,6 +130,6 @@ function themechange() {
             element.style.border = "1px solid #ced4da";
         }
     }
-    
+
     x++;
 }

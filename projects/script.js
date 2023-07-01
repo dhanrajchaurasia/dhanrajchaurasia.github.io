@@ -20,7 +20,7 @@ $(document).ready(function(){
 document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
-        document.title = "Projects | Portfolio Avinash Anand";
+        document.title = "Projects | Portfolio Dhanraj Chaurasia";
         $("#favicon").attr("href","/assests/images/favicon.png");
     }
     else {

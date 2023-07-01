@@ -53,7 +53,7 @@ function(){
 
 // <!-- typed js effect starts -->
     var typed = new Typed(".typing-text", {
-        strings: ["Competitive Programmer", "React Developer", "Django Developer"],
+        strings: ["Competitive Programming", "Web Developement"],
         loop: true,
         typeSpeed: 50,
 		backSpeed: 25,

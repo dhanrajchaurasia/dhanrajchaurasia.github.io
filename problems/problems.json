@@ -16,8 +16,8 @@
     {
         "name": "Remove Stones",
         "platform": "CodeChef",
-        "contest": "Starters 69",
-        "difficulty": "2958",
+        "contest": "Starters 96",
+        "difficulty": "2968",
         "link": "https://www.codechef.com/problems/REMOVESTONES"
     },
     {
@@ -40,5 +40,19 @@
         "contest": "AlgoQueen Contest '23",
         "difficulty": "Easy",
         "link": "https://codedrills.io/contests/algoqueen-2023-practice-contest-4/problems/matrix-queries"
+    },
+    {
+        "name": "Divisor Removal (Easy)",
+        "platform": "MNNIT",
+        "contest": "CodeStart 5.0 '23",
+        "difficulty": "Easy-Medium",
+        "link": "https://codeforces.com/gym/432372/problem/D1"
+    },
+    {
+        "name": "Divisor Removal (Hard)",
+        "platform": "MNNIT",
+        "contest": "CodeStart 5.0 '23",
+        "difficulty": "Medium",
+        "link": "https://codeforces.com/gym/432372/problem/D2"
     }
 ]

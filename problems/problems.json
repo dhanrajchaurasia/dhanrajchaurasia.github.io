@@ -44,14 +44,14 @@
     {
         "name": "Divisor Removal (Easy)",
         "platform": "MNNIT",
-        "contest": "CodeStart 5.0 '23",
+        "contest": "CodeStart 6.0 '23",
         "difficulty": "Easy-Medium",
         "link": "https://codeforces.com/gym/432372/problem/D1"
     },
     {
         "name": "Divisor Removal (Hard)",
         "platform": "MNNIT",
-        "contest": "CodeStart 5.0 '23",
+        "contest": "CodeStart 6.0 '23",
         "difficulty": "Medium",
         "link": "https://codeforces.com/gym/432372/problem/D2"
     }

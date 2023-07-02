@@ -418,3 +418,25 @@ header .navbar ul li a:hover{
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+.boxx{
+  height: 18rem;
+  width: 33rem;
+  text-align: center;
+  font-size: 1.7rem;
+  transition: .2s;
+  background: rgb(230, 230, 230);
+  color: #02094b;
+  border: none; 
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+.desc > div{
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  left:7rem;
+  bottom: 2rem;
+}
+.tag{
+  padding-top: 1rem;
+}

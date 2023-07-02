@@ -1,32 +1,44 @@
-[ 
+[
     {
-        "id": 1,
-        "name": "AR-Curve",
-        "desc": "An app and a webpage with auth and learning features to explore more about Argumented Reality.",
-        "image": "../assests/images/projects/ARCurve.png",
-        "links": {
-            "view": "https://ar-curve.onrender.com",
-            "code": "https://github.com/dhanrajchaurasia/ARCurve"
-        }
+        "name": "Tom and Jerry",
+        "platform": "HackerEarth",
+        "contest": "July Easy '23",
+        "difficulty": "Hard",
+        "link": "https://www.hackerearth.com/problem/algorithm/tom-and-jerry-6-58853f9b/"
     },
     {
-        "id": 2,
-        "name": "ViewHub",
-        "desc": "---",
-        "image": "../assests/images/projects/project.png",
-        "links": {
-            "view": "../404.html",
-            "code": "https://github.com/TriDev-Avishkar2k22/ViewHUB-Webster"
-        }
+        "name": "No-Inversions",
+        "platform": "HackerEarth",
+        "contest": "June Circuit '23",
+        "difficulty": "Hard",
+        "link": "https://www.hackerearth.com/practice/data-structures/advanced-data-structures/segment-trees/practice-problems/algorithm/no-inversions-db0ebea5/"
     },
     {
-        "id": 3,
-        "name": "Diagnosis Tracker",
-        "desc": "---",
-        "image": "../assests/images/projects/project.jpg",
-        "links": {
-            "view": "../404.html",
-            "code": "https://github.com/dhanrajchaurasia/DiagnosisTracker"
-        }
+        "name": "Remove Stones",
+        "platform": "CodeChef",
+        "contest": "Starters 69",
+        "difficulty": "2958",
+        "link": "https://www.codechef.com/problems/REMOVESTONES"
+    },
+    {
+        "name": "Kth Prime Sum",
+        "platform": "HackerEarth",
+        "contest": "May Easy '23",
+        "difficulty": "Hard",
+        "link": "https://www.hackerearth.com/problem/algorithm/kth-prime-sum-c8aac55e/"
+    },
+    {
+        "name": "Xor Queries",
+        "platform": "HackerEarth",
+        "contest": "May Circuit '23",
+        "difficulty": "Hard",
+        "link": "https://www.hackerearth.com/problem/algorithm/xor-queries-7-d1970538/"
+    },
+    {
+        "name": "Matrix Queries",
+        "platform": "Codedrills",
+        "contest": "AlgoQueen Contest '23",
+        "difficulty": "Easy",
+        "link": "https://codedrills.io/contests/algoqueen-2023-practice-contest-4/problems/matrix-queries"
     }
 ]

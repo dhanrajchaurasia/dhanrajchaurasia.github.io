@@ -20,48 +20,46 @@ $(document).ready(function(){
 document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
-        document.title = "Projects | Portfolio Dhanraj Chaurasia";
+        document.title = "Problems | Portfolio Dhanraj Chaurasia";
         $("#favicon").attr("href","/assests/images/favicon.png");
     }
     else {
         document.title = "Come Back To Portfolio";
-        
     }
 });
 
 
-// fetch projects start
-function getProjects() {
-    return fetch("projects.json")
-        .then(response => response.json())
-        .then(data => {
-            return data
+// fetch Problems start
+function getProblems() {
+    return fetch("problems.json")
+    .then(response => response.json())
+    .then(data => {
+        return data
         })
 }
 
 
-function showProjects(projects) {
-    let projectsContainer = document.querySelector(".work .box-container");
-    let projectsHTML = "";
-    projects.forEach(project => {
-        projectsHTML += `
-        <div class="box tilt">
-      <img draggable="false" src="${project.image}" alt="" />
+function showProblems(problems) {
+    let problemsContainer = document.querySelector(".work .box-container");
+    let problemsHTML = "";
+    problems.forEach(problem => {
+        problemsHTML += `
+        <div class="boxx">
       <div class="content">
         <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
+        <h3>${problem.name}</h3>
+        <p><b>Difficulty: ${problem.difficulty}</b></p>
+        <p>${problem.platform} ${problem.contest}</p>
         <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
+            <div class="btns">
+            <a href="${problem.link}" class="btn" target="_blank">Try Problem <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
         </div>
       </div>
     </div>`
     });
-    projectsContainer.innerHTML = projectsHTML;
+    problemsContainer.innerHTML = problemsHTML;
 
 // vanilla tilt.js
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
@@ -77,14 +75,14 @@ const srtop = ScrollReveal({
     reset: true
 });
 
-/* SCROLL PROJECTS */
+/* SCROLL PROBLEMS */
 srtop.reveal('.work .box',{interval: 200}); 
 }
 
-getProjects().then(data => {
-    showProjects(data);
+getProblems().then(data => {
+    showProblems(data);
 })
-// fetch projects end
+// fetch Problems end
 
 // Start of Tawk.to Live Chat
 // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

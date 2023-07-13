@@ -1,5 +1,12 @@
 [
     {
+        "name": "Game On Tree",
+        "platform": "HackerEarth",
+        "contest": "July Circuit '23",
+        "difficulty": "Hard",
+        "link": "https://www.hackerearth.com/problem/algorithm/game-on-tree/"
+    },
+    {
         "name": "Tom and Jerry",
         "platform": "HackerEarth",
         "contest": "July Easy '23",

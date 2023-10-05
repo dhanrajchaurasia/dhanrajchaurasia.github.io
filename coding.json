@@ -1,1 +1,27 @@
-
+[
+  {
+    "Platform": "CodeForces",
+    "Profile": "https://codeforces.com/profile/coderdhanraj",
+    "Text": "Expert (max. rating 1756)"
+  },
+  {
+    "Platform": "CodeChef",
+    "Profile": "https://codechef.com/users/coderdhanraj",
+    "Text": "5 Stars (max. rating 2046)"
+  },
+  {
+    "Platform": "AtCoder",
+    "Profile": "https://atcoder.jp/users/coderdhanraj",
+    "Text": "2 Kyu (Blue, max. rating 1663)"
+  },
+  {
+    "Platform": "LeetCode",
+    "Profile": "https://leetcode.com/coderdhanraj",
+    "Text": "Guradian (AIR 28, max. rating 2622)"
+  },
+  {
+    "Platform": "HackerEarth",
+    "Profile": "https://hackerearth.com/@coderdhanraj",
+    "Text": "Red (Rank 20, max. rating 2117)"
+  }
+]

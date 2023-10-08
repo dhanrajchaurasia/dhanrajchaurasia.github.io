@@ -7,7 +7,7 @@ function showAbout(texts) {
     let textContainer = document.querySelector("#about-text");
     let textHTML = "";
     texts.forEach(e => {
-        textHTML += `${e.text}<br/>`
+        textHTML += `⦿ ${e.text}<br/>`
     });
     textContainer.innerHTML = textHTML;
 }
@@ -24,7 +24,7 @@ function showCoding(texts) {
     let textContainer = document.querySelector("#coding-text");
     let textHTML = "";
     texts.forEach(text => {
-        textHTML += `<a href="${text.Profile}" target="_blank">${text.Platform}:</a> </span>${text.Text}<br/>`
+        textHTML += `⦿ <a href="${text.Profile}" target="_blank">${text.Platform}:</a> </span>${text.Text}<br/>`
     });
     textContainer.innerHTML = textHTML;
 }

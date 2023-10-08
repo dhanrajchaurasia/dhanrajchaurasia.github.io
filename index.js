@@ -6,8 +6,8 @@ function getAbout() {
 function showAbout(texts) {
     let textContainer = document.querySelector("#about-text");
     let textHTML = "";
-    texts.forEach(text => {
-        textHTML += `${text}<br/>`
+    texts.forEach(e => {
+        textHTML += `${e.text}<br/>`
     });
     textContainer.innerHTML = textHTML;
 }

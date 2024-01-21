@@ -49,7 +49,7 @@
     },
     {
         "name": "Redis",
-        "icon": "https://icons-for-free.com/iconfiles/png/48/redis+plain-1324760569616342910.png"
+        "icon": "https://img.icons8.com/color/48/000000/redis.png"
     },
     {
         "name": "Redshift",
@@ -57,7 +57,7 @@
     },
     {
         "name": "SQL",
-        "icon": "https://icons-for-free.com/iconfiles/png/48/file+format+sql+icon-1320184497849233026.png"
+        "icon": "https://img.icons8.com/color/48/000000/sql.png"
     },
     {
         "name": "PostgreSQL",

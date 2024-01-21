@@ -222,7 +222,7 @@ header .navbar ul li a:hover{
 .home .content h3 span{
   font-size: 4rem;
   font-weight: 800;
-  color: #0984ad;
+  color: #274bff;
 }
 .home .content p{
   font-size: 2.5rem;
@@ -232,7 +232,7 @@ header .navbar ul li a:hover{
 }
 .home .content p span{
   font-size: 2.5rem;
-  color: #0984ad;
+  color: #2d00e2;
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -633,8 +633,7 @@ header .navbar ul li a:hover{
 
 /* work section starts */
 .work{
-  /* background: #010124; */
-  background: linear-gradient(to bottom, #2121e2, #00002c);
+  background: black;
 }
 .work h2{
   color: #fff;
@@ -652,7 +651,7 @@ header .navbar ul li a:hover{
 .work .box-container .box{
   flex:1 1 30rem;
   border-radius: .5rem;
-  box-shadow: 0 .5rem 1rem rgba(225, 219, 219, 0.895);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.351);
   position: relative;
   overflow:hidden;
   height:30rem;
@@ -1274,4 +1273,9 @@ form .button-area{
 }
 .link_icon:hover > i{
   color: #fff;
+}
+.viewall{
+  display: block;
+  margin: auto;
+  height: 50px;
 }

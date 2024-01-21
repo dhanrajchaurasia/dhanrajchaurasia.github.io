@@ -33,7 +33,7 @@
         "id": 4,
         "name": "AR-Curve [EJS]",
         "desc": "An app and a webpage with auth and learning features to explore more about Argumented Reality",
-        "image": "../assests/images/projects/ARCurve.jpg",
+        "image": "../assests/images/projects/ARCurve.png",
         "links": {
             "view": "../404.html",
             "code": "https://github.com/dhanrajchaurasia/ARCurve"

@@ -682,7 +682,7 @@ header .navbar ul li a:hover{
 }
 .work .box-container .box .content .tag h3{
   font-size: 2rem;
-  color: white;
+  color:white;
 }
 .work .box-container .box:hover .content{
   top: 25%;
@@ -1278,4 +1278,7 @@ form .button-area{
   display: block;
   margin: auto;
   height: 50px;
+}
+.tag h3{
+  color:white;
 }

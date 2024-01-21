@@ -177,7 +177,6 @@ header .navbar ul li a:hover{
 .work .box-container .box{
   flex:1 1 30rem;
   border-radius: .5rem;
-  box-shadow: 0 .5rem 1rem rgba(225, 219, 219, 0.895);
   position: relative;
   overflow:hidden;
   height:30rem;

@@ -1,19 +1,19 @@
 [ 
     {
         "id": 1,
-        "name": "AR-Curve",
-        "desc": "An app and a webpage with auth and learning features to explore more about Argumented Reality.",
-        "image": "../assests/images/projects/ARCurve.png",
+        "name": "ViewHub [Django]",
+        "desc": "A webapp, having features to upload audio/video/images with like, share and comment.etc and streaming.",
+        "image": "../assests/images/projects/viewhub.png",
         "links": {
-            "view": "https://ar-curve.onrender.com",
-            "code": "https://github.com/dhanrajchaurasia/ARCurve"
+            "view": "/404.html",
+            "code": "https://github.com/TriDev-Avishkar2k22/ViewHUB-Webster"
         }
     },
     {
         "id": 2,
-        "name": "ViewHub",
-        "desc": "---",
-        "image": "../assests/images/projects/project.png",
+        "name": "CP Grind [Go]",
+        "desc": "A golang based app with api developement.",
+        "image": "../assests/images/projects/cp_grind.png",
         "links": {
             "view": "../404.html",
             "code": "https://github.com/TriDev-Avishkar2k22/ViewHUB-Webster"
@@ -21,12 +21,42 @@
     },
     {
         "id": 3,
-        "name": "Diagnosis Tracker",
-        "desc": "---",
-        "image": "../assests/images/projects/project.jpg",
+        "name": "Diagnosis Tracker [Django]",
+        "desc": "A django based webapp, with an authentication with opencv, stores diagnosis details.",
+        "image": "../assests/images/projects/diagnosis_tracker.png",
         "links": {
             "view": "../404.html",
             "code": "https://github.com/dhanrajchaurasia/DiagnosisTracker"
+        }
+    },
+    {
+        "id": 4,
+        "name": "AR-Curve [EJS]",
+        "desc": "An app and a webpage with auth and learning features to explore more about Argumented Reality",
+        "image": "../assests/images/projects/ARCurve.jpg",
+        "links": {
+            "view": "../404.html",
+            "code": "https://github.com/dhanrajchaurasia/ARCurve"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Calculator [React]",
+        "desc": "A basic calculator app based react components.",
+        "image": "../assests/images/projects/calci.png",
+        "links": {
+            "view": "https://dhanrajchaurasia.github.io/calculator/",
+            "code": "https://github.com/dhanrajchaurasia/calculator"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Image Editor [JS]",
+        "desc": "A basic calculator app based react components.",
+        "image": "../assests/images/projects/image_editor.png",
+        "links": {
+            "view": "https://dhanrajchaurasia.github.io/Image-Editor-Project/",
+            "code": "https://github.com/dhanrajchaurasia/Image-Editor-Project"
         }
     }
 ]

@@ -5,7 +5,7 @@
         "desc": "A webapp, having features to upload audio/video/images with like, share and comment.etc and streaming.",
         "image": "../assests/images/projects/viewhub.png",
         "links": {
-            "view": "/404.html",
+            "view": "https://viewhub.vercel.app",
             "code": "https://github.com/TriDev-Avishkar2k22/ViewHUB-Webster"
         }
     },

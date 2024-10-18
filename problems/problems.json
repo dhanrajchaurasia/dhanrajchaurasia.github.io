@@ -50,16 +50,86 @@
     },
     {
         "name": "Divisor Removal (Easy)",
-        "platform": "MNNIT",
+        "platform": "Codeforces",
         "contest": "CodeStart 6.0 '23",
         "difficulty": "Easy-Medium",
         "link": "https://codeforces.com/group/hUywLYmr80/contest/432372/problem/D1"
     },
     {
-        "name": "Divisor Removal (Hard)",
-        "platform": "MNNIT",
-        "contest": "CodeStart 6.0 '23",
+        "name": "Batman And His AI Model",
+        "platform": "Codeforces",
+        "contest": "Insomnia Finals 2024",
         "difficulty": "Medium",
-        "link": "https://codeforces.com/group/hUywLYmr80/contest/432372/problem/D2"
+        "link": "https://codeforces.com/gym/510369/problem/C"
+    },
+    {
+        "name": "Saving Wayne Enterprises",
+        "platform": "Codeforces",
+        "contest": "Insomnia Finals 2024",
+        "difficulty": "Medium",
+        "link": "https://codeforces.com/gym/510369/problem/A"
+    },
+    {
+        "name": "Magical Roads",
+        "platform": "Codeforces",
+        "contest": "Insomnia Finals 2024",
+        "difficulty": "Insane",
+        "link": "https://codeforces.com/gym/510369/problem/B"
+    },
+    {
+        "name": "Trapdoor Riddle",
+        "platform": "Codeforces",
+        "contest": "Insomnia Finals 2024",
+        "difficulty": "Hard",
+        "link": "https://codeforces.com/gym/510369/problem/D"
+    },
+    {
+        "name": "GCPD's Rescue Mission",
+        "platform": "Codeforces",
+        "contest": "Insomnia Finals 2024",
+        "difficulty": "Medium",
+        "link": "https://codeforces.com/gym/510369/problem/G"
+    },
+    {
+        "name": "Beautiful Paths",
+        "platform": "Codeforces",
+        "contest": "Insomnia Finals 2024",
+        "difficulty": "Medium",
+        "link": "https://codeforces.com/gym/510369/problem/H"
+    },
+    {
+        "name": "Dice Riddle",
+        "platform": "Codeforces",
+        "contest": "Insomnia Qualifier 2024",
+        "difficulty": "Medium",
+        "link": "https://codeforces.com/gym/510365/problem/B"
+    },
+    {
+        "name": "Formula Enhancement Conundrum",
+        "platform": "Codeforces",
+        "contest": "Insomnia Qualifier 2024",
+        "difficulty": "Medium",
+        "link": "https://codeforces.com/gym/510365/problem/D"
+    },
+    {
+        "name": "Nielsen's Escape Plan",
+        "platform": "Codeforces",
+        "contest": "Insomnia Qualifier 2024",
+        "difficulty": "Medium",
+        "link": "https://codeforces.com/gym/510365/problem/G"
+    },
+    {
+        "name": "Help Alice!",
+        "platform": "Codeforces",
+        "contest": "OPC-2023 1.0",
+        "difficulty": "Medium",
+        "link": "https://codeforces.com/group/hUywLYmr80/contest/374872/problem/H"
+    },
+    {
+        "name": "Sealed Secrets",
+        "platform": "Codeforces",
+        "contest": "Code of The Day 2024",
+        "difficulty": "Medium",
+        "link": "https://codeforces.com/group/hUywLYmr80/contest/509455/problem/F"
     }
 ]

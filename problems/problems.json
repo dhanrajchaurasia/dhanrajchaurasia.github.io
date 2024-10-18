@@ -131,5 +131,12 @@
         "contest": "Code of The Day 2024",
         "difficulty": "Medium",
         "link": "https://codeforces.com/group/hUywLYmr80/contest/509455/problem/F"
+    },
+    {
+        "name": "Bob's Proposal",
+        "platform": "Codeforces",
+        "contest": "Testing Problem",
+        "difficulty": "Cakewalk",
+        "link": "https://codeforces.com/gym/509200/problem/D"
     }
 ]

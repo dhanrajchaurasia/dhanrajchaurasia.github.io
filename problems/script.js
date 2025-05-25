@@ -40,7 +40,7 @@ function getProblems() {
 
 
 function showProblems(problems) {
-    let problemsContainer = document.querySelector(".work .box-container");
+    let problemsContainer = document.querySelector(".work .box-container.box-container:nth-of-type(2)");
     let problemsHTML = "";
     problems.forEach(problem => {
         problemsHTML += `
@@ -78,10 +78,60 @@ const srtop = ScrollReveal({
 /* SCROLL PROBLEMS */
 srtop.reveal('.work .box',{interval: 200}); 
 }
+function getSolve() {
+    return fetch("solved.json")
+        .then(response => response.json())
+        .then(data => {
+            return data
+        })
+}
 
 getProblems().then(data => {
     showProblems(data);
 })
+getSolve().then(data => {
+    showSolve(data);
+})
+function showSolve(problems) {
+    let problemsContainer = document.querySelector(".work .box-container:nth-of-type(1)");
+    let problemsHTML = "";
+    problems.forEach(problem => {
+        let rating = problem.rating ? `<p>Max. Rating: ${problem.rating}</p>` : "";
+        problemsHTML += `
+        <div class="boxx">
+      <div class="content">
+        <div class="tag">
+        <h3>${problem.platform}</h3>
+        <p>Solved ${problem.count} problems</p>
+        ${rating}
+        <div class="desc" style="margin-left: 1rem">
+            <div class="btns">
+            <a href="${problem.link}" class="btn" target="_blank">Check Profile <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>`
+    });
+    problemsContainer.innerHTML = problemsHTML;
+
+// vanilla tilt.js
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 20,
+    });
+// vanilla tilt.js
+
+    /* ===== SCROLL REVEAL ANIMATION ===== */
+    const srtop = ScrollReveal({
+        origin: 'bottom',
+        distance: '80px',
+        duration: 1000,
+        reset: true
+    });
+
+    /* SCROLL PROBLEMS */
+    srtop.reveal('.work .box',{interval: 200});
+}
 // fetch Problems end
 
 // Start of Tawk.to Live Chat

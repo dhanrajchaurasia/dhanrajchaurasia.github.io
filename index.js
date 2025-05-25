@@ -1,8 +1,11 @@
 function getAbout() {
     return fetch("about.json")
-    .then(response => response.json())
-    .then(data => {return data})
+        .then(response => response.json())
+        .then(data => {
+            return data
+        })
 }
+
 function showAbout(texts) {
     let textContainer = document.querySelector("#about-text");
     let textHTML = "";
@@ -11,15 +14,19 @@ function showAbout(texts) {
     });
     textContainer.innerHTML = textHTML;
 }
+
 getAbout().then(data => {
     showAbout(data);
 })
 
 function getCoding() {
     return fetch("coding.json")
-    .then(response => response.json())
-    .then(data => {return data})
+        .then(response => response.json())
+        .then(data => {
+            return data
+        })
 }
+
 function showCoding(texts) {
     let textContainer = document.querySelector("#coding-text");
     let textHTML = "";
@@ -28,6 +35,33 @@ function showCoding(texts) {
     });
     textContainer.innerHTML = textHTML;
 }
+
 getCoding().then(data => {
     showCoding(data);
 })
+
+const toggleBtn = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const root = document.documentElement;
+
+// Apply saved theme on load
+if (localStorage.getItem('theme') === 'dark') {
+    root.classList.add('dark');
+    themeIcon.classList.replace('fa-moon', 'fa-sun');
+}
+
+toggleBtn.addEventListener('click', () => {
+    root.classList.toggle('dark');
+    const isDark = root.classList.contains('dark');
+
+    // Toggle icon
+    if (isDark) {
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'light');
+    }
+});
+
+

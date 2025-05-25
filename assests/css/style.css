@@ -38,7 +38,6 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
   background: #420177;
 }
-
 /* pre loader start */
 .loader-container{
   position: fixed;
@@ -171,6 +170,11 @@ header .navbar ul li a:hover{
     right: 0;
   }
 }
+#theme-toggle{
+  font-size: 22px;
+  padding-left: 10%;
+  cursor: pointer;
+}
 /* hamburger icon ends */
 
 /* hero section starts*/
@@ -224,6 +228,13 @@ header .navbar ul li a:hover{
   font-weight: 800;
   color: #274bff;
 }
+.content h5{
+  font-size: 2rem;
+  font-weight: 800;
+  color: #007acf;
+  text-align: left;
+  padding-left: 10px;
+}
 .home .content p{
   font-size: 2.5rem;
   color: #000;
@@ -245,7 +256,7 @@ header .navbar ul li a:hover{
   transition: 0.5s;
   color: #fff;
   background: #1858c7;
-  box-shadow: 0px 5px 18px #01030b(145, 136, 12, 0.6);
+  box-shadow: 0px 5px 18px #01030b;  /*rgba(145, 136, 12, 0.6);*/
   font-family: 'Nunito', sans-serif;
 }
 .home .btn span {
@@ -338,6 +349,7 @@ header .navbar ul li a:hover{
 /* about section starts */
 .about {
   background: rgb(255, 255, 255);
+  min-height: 50vh;
 }
 .about .row{
   display: flex;
@@ -450,7 +462,7 @@ header .navbar ul li a:hover{
 
 /* skills section starts */
 .skills {
-  min-height: 90vh;
+  min-height: 70vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
 }
 .skills h2 {
@@ -525,7 +537,7 @@ header .navbar ul li a:hover{
 /* education section starts */
 .education{
   background: #e5ecfb;
-  min-height: 80vh;
+  min-height: 35vh;
 }
 .education .qoute{
   font-size: 1.5rem;
@@ -561,6 +573,11 @@ header .navbar ul li a:hover{
 .education .box-container .box .image{
   flex: 1 1 20rem;
   width: 100%;
+}
+.edu-logo{
+  margin-top: 30px;
+  height: 70% !important;
+  width: 80% !important;
 }
 .education .box-container .box img{
   object-fit: cover;
@@ -752,6 +769,9 @@ header .navbar ul li a:hover{
 
 
 /* experience section starts */
+.experience{
+  min-height: 60vh;
+}
 .experience .timeline {
   position: relative;
   max-width: 1200px;
@@ -1109,7 +1129,7 @@ form .button-area{
 }
 .footer .box-container .box p i{
   padding-right: 1rem;
-  color: #421cecf5;
+  color: rgb(255, 0, 210, 0.96);
 }
 .footer .box-container .box a{
   font-size: 1.5rem;
@@ -1207,7 +1227,7 @@ form .button-area{
   right: 2rem;
   padding: 1rem 1.5rem;
   font-size: 2rem;
-  background: #421cecf5;
+  background: rgb(255, 0, 210, 0.96);
   color: rgb(232, 229, 239);
   border-radius: 50%;
   transition: 1s linear;
@@ -1281,4 +1301,79 @@ form .button-area{
 }
 .tag h3{
   color:white;
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode section,
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ddd;
+  border-color: #333;
+}
+
+body.dark-mode a {
+  color: #80cbc4; /* softer teal link */
+}
+
+body.dark-mode a:hover {
+  color: #4db6ac;
+}
+
+body.dark-mode nav {
+  background-color: #222;
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode button,
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+body.dark-mode button:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Cards or containers */
+body.dark-mode .card {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+/* Navbar links */
+body.dark-mode nav a {
+  color: #ccc;
+}
+
+body.dark-mode nav a:hover {
+  color: #fff;
+}
+
+/* Forms placeholder */
+body.dark-mode ::placeholder {
+  color: #888;
+}
+
+/* Tables if any */
+body.dark-mode table {
+  background-color: #222;
+  color: #ccc;
+}
+
+body.dark-mode th,
+body.dark-mode td {
+  border-color: #444;
 }

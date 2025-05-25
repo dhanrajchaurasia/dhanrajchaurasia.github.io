@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords"content="Dhanraj Chauraia" />
-  <meta name="description" content="Welcome to Dhanraj's Portfolio. Passionate Competitive Programmer & Web Developer." />
+  <meta name="keywords" content="Dhanraj Chaurasia"/>
+  <meta name="description" content="Welcome to Dhanraj's Portfolio. Passionate Competitive Programmer & Software Developer." />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assests/css/style.css">
   <!-- Font Awesome -->
@@ -19,11 +19,6 @@
 
   <!-- emailjs script -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("6gNZZvz9sidtICi8L");
-    })();
-  </script>
 
 </head>
 
@@ -50,6 +45,9 @@
         <li><a href="/problems/">Problems</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li id="theme-toggle" class="text-5xl p-6 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-125 transition-transform duration-200" aria-label="Switch to dark mode">
+        <i id="theme-icon" class="fas fa-moon"></i>
+        </li>
       </ul>
     </nav>
   </header>
@@ -75,9 +73,8 @@
                 class="fab fa-youtube"></i></a></li>
           <li><a class="twitter" href="https://twitter.com/mnnitdhanraj" target="_blank"><i
                 class="fab fa-twitter"></i></a></li>
-          <li><a class="instagram" href="https://www.instagram.com/dhanraj.chaurasia/"><i class="fab fa-instagram"
-                target="_blank"></i></a></li>
-
+          <li><a class="instagram" href="https://www.instagram.com/dhanraj.chaurasia/" target="_blank"><i
+                  class="fab fa-instagram"></i></a></li>
         </ul>
       </div>
     </div>
@@ -95,13 +92,13 @@
     <div class="row">
 
       <div class="image">
-        <img draggable="false" class="tilt" src="./assests/images/me.jpeg" alt="">
+        <img draggable="false" class="tilt" src="./assests/images/img.png" alt="">
       </div>
       <div class="content">
         <h3>I'm Dhanraj Chaurasia.</h3>
-        <span class="tag">Passionate Web Developer | Competitive Programmer </span>
+        <span class="tag">Passionate Software Developer | Competitive Programmer </span>
         <p id="about-text"></p>
-        <h3 class="tag">My Coding Profiles:</h3>
+        <h3 class="tag">Coding Profiles:</h3>
         <div class="box-container">
           <div class="box">
             <p id="coding-text">
@@ -114,6 +111,7 @@
             <i class="fas fa-chevron-right"></i>
           </a>
       </div>
+    </div>
     </div>
   </section>
   <!-- about section ends -->
@@ -143,31 +141,31 @@
       <div class="box">
         <div class="image">
           <a href="https://academics.mnnit.ac.in/new/" target="_blank">
-            <img draggable="false" src="./assests/images/educat/collage.png" alt="" style="height: 150px; width: 150px;"/>
-
+            <img draggable="false" src="assests/images/education/mnnit.png" alt="" class="edu-logo"/>
+          </a>
         </div>
         <div class="content">
           <h3>B.Tech in Electronics And Communication Engg.</h3>
-          <p>Final Year | NIT Allahabad </p>
-          <p>CPI: 8.28 (7th sem) </p>
-          <h4>2020-2024 | Pursuing</h4>
+          <h5>NIT Allahabad </h5>
+          <h5>CPI: 8.38 </h5>
+          <h5>2020-2024</h5>
           </a>
         </div>
       </div>
 
-      <div class="box">
-        <div class="image">
-          <!-- <a href="http://www.schoolfinds.com/high-school-sandha-2-bhalar-munger.html"> -->
-            <img draggable="false" src="./assests/images/educat/school.png" alt=""  style="margin-top: 20px; height: 120px; width: 150px;"/>
-        </div>
-        <div class="content">
-          <h3>Intermediate and HighSchool</h3>
-          <p> Intermediate | 81.2% | Nalin Public Inter College</p>
-          <p> High School | 83.5% | Nand Kishore Inter College</p>
-          <!-- </a> -->
-          <h4>2018-2020 | Completed</h4>
-        </div>
-      </div>
+<!--      <div class="box">-->
+<!--        <div class="image">-->
+<!--          &lt;!&ndash; <a href="http://www.schoolfinds.com/high-school-sandha-2-bhalar-munger.html"> &ndash;&gt;-->
+<!--            <img draggable="false" src="assests/images/education/upmsp.png" alt="" style="margin: 30px; height: 80px; width: 400px;"/>-->
+<!--        </div>-->
+<!--        <div class="content">-->
+<!--          <h3>Intermediate and HighSchool</h3>-->
+<!--          <p> Intermediate | 81.2%</p>-->
+<!--          <p> High School | 83.5%</p>-->
+<!--          &lt;!&ndash; </a> &ndash;&gt;-->
+<!--          <h4>2018-2020</h4>-->
+<!--        </div>-->
+<!--      </div>-->
 
     </div>
   </section>
@@ -252,7 +250,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="box tilt">
         <img draggable="false" src="./assests/images/projects/calci.png" alt="" />
         <div class="content">
@@ -288,11 +286,12 @@
           </div>
         </div>
       </div>
-      
+
     <div class="viewall">
         <a href="/projects/" class="btn"><span>View All</span>
           <i class="fas fa-arrow-right"></i>
         </a>
+    </div>
     </div>
   </section>
   <!-- work project section ends -->
@@ -304,6 +303,21 @@
 
     <div class="timeline">
 
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Software Developer</h2>
+          </div>
+          <div class="desc">
+            <h3>BNY Mellon</h3>
+            <p>July 2024 - Present</p>
+            <p>Worked on Frontend with Angular and Backend with Springboot, also worked on CI/CD Deployments.
+            </p>
+            <br>
+          </div>
+        </div>
+      </div>
+
       <div class="container right">
         <div class="content">
           <div class="tag">
@@ -311,14 +325,14 @@
           </div>
           <div class="desc">
             <h3>HackerEarth</h3>
-            <p>Aug 2023 - Feb 2024</p>
+            <p>Aug 2023 - June 2024</p>
             <p>Worked on creating coding, oops and debugging problems and testing.
           </p>
           <br>
           </div>
         </div>
       </div>
-      
+
       <div class="container left">
         <div class="content">
           <div class="tag">
@@ -333,35 +347,35 @@
           </div>
         </div>
       </div>
-      
-      <div class="container right">
-        <div class="content">
-          <div class="tag">
-            <h2>Algorithm Lead</h2>
-          </div>
-          <div class="desc">
-            <h3>CC Club NIT-Allahabad</h3>
-            <p>April 2023 - Present</p>
-            <p>Developed Coding Culture in the college and organized many events.</p>
-            <br>
-          </div>
-        </div>
-      </div>
+<!--      -->
+<!--      <div class="container right">-->
+<!--        <div class="content">-->
+<!--          <div class="tag">-->
+<!--            <h2>Algorithm Lead</h2>-->
+<!--          </div>-->
+<!--          <div class="desc">-->
+<!--            <h3>CC Club NIT-Allahabad</h3>-->
+<!--            <p>April 2023 - Present</p>-->
+<!--            <p>Developed Coding Culture in the college and organized many events.</p>-->
+<!--            <br>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
-      <div class="container left">
-        <div class="content">
-          <div class="tag">
-            <h2>Problem Setter - Freelance </h2>
-          </div>
-          <div class="desc">
-            <h3> CodeChef | HackerEarth | iMocha | Codedrills</h3>
-            <!-- <h2>Created  Acheiver</h2> -->
-            <p>Jan 2023 - July 2023</p>
-            <p>Created many problems, can see <a href="/problems/" style="color: #ffee00;">here</a></p>
-            <br>
-          </div>
-        </div>
-      </div>
+<!--      <div class="container left">-->
+<!--        <div class="content">-->
+<!--          <div class="tag">-->
+<!--            <h2>Problem Setter - Freelance </h2>-->
+<!--          </div>-->
+<!--          <div class="desc">-->
+<!--            <h3> CodeChef | HackerEarth | iMocha | Codedrills</h3>-->
+<!--            &lt;!&ndash; <h2>Created  Acheiver</h2> &ndash;&gt;-->
+<!--            <p>Jan 2023 - July 2023</p>-->
+<!--            <p>Created many problems, can see <a href="/problems/" style="color: #ffee00;">here</a></p>-->
+<!--            <br>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
       <div class="morebtn">
         <a href="/experience/" class="btn"><span>View All</span>
@@ -480,7 +494,7 @@
   <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
   <script src="./assests/js/script.js"></script>
-  
+
   <script src="./index.js"></script>
 
 </body>

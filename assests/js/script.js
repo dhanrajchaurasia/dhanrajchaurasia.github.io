@@ -140,13 +140,14 @@ fetchData().then(data => {
 
 $("#contact-form").submit(function (event) {
     event.preventDefault();
-    emailjs.init("6gNZZvz9sidtICi8L");
-    console.log("form submitted");
-    emailjs.sendForm('service_5rjf5tb', 'template_wxdlrdu', '#contact-form')
+    emailjs.init('6prvAl6jgfPNlYhmg');
+    console.log("Email Service called!");
+    emailjs.sendForm('service_mdr9yls', 'template_wxdlrdu', '#contact-form')
         .then(function (response) {
             document.getElementById("contact-form").reset();
             alert("Form Submitted Successfully");
         }, function (error) {
+            console.log(error);
             alert("Form Submission Failed! Try Again!");
         });
     

@@ -52,13 +52,55 @@ function(){
 
 
 // <!-- typed js effect starts -->
-    var typed = new Typed(".typing-text", {
-        strings: ["Competitive Programming", "Web Developement"],
-        loop: true,
-        typeSpeed: 50,
-		backSpeed: 25,
-		backDelay: 500,
-      });
+    $(document).ready(function() {
+        var typingStrings = [
+            'Competitive Programming',
+            'Web Development',
+            'Backend Development'
+        ];
+        
+        var typingClasses = ['typing-1', 'typing-2', 'typing-3'];
+        
+        var typed = new Typed(".typing-text", {
+            strings: typingStrings,
+            loop: true,
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 500,
+            onStringTyped: function(arrayPos, self) {
+                // Apply color class after string is typed
+                var typingElement = document.querySelector('.typing-text');
+                if (typingElement && typingClasses[arrayPos]) {
+                    // Remove all typing classes
+                    typingElement.classList.remove('typing-1', 'typing-2', 'typing-3');
+                    // Add the current typing class
+                    typingElement.classList.add(typingClasses[arrayPos]);
+                }
+            },
+            onTypingPaused: function(arrayPos, self) {
+                // Apply color class when typing is paused
+                var typingElement = document.querySelector('.typing-text');
+                if (typingElement && typingClasses[arrayPos]) {
+                    typingElement.classList.remove('typing-1', 'typing-2', 'typing-3');
+                    typingElement.classList.add(typingClasses[arrayPos]);
+                }
+            },
+            preStringTyped: function(arrayPos, self) {
+                // Apply color class before typing starts
+                var typingElement = document.querySelector('.typing-text');
+                if (typingElement && typingClasses[arrayPos]) {
+                    typingElement.classList.remove('typing-1', 'typing-2', 'typing-3');
+                    typingElement.classList.add(typingClasses[arrayPos]);
+                }
+            }
+        });
+        
+        // Apply initial class
+        var typingElement = document.querySelector('.typing-text');
+        if (typingElement) {
+            typingElement.classList.add(typingClasses[0]);
+        }
+    });
 // <!-- typed js effect ends -->
 
 // <!-- tilt js effect starts -->

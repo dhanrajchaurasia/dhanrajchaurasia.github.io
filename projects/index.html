@@ -5,10 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../assests/css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link id='favicon' rel="shortcut icon" href="/assests/images/favicon.png" type="image/x-png">
-    <title>Problems</title>
+
+    <!-- Theme initialization - prevents flash of unstyled content -->
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+          document.documentElement.classList.add('dark-mode-pending');
+        }
+      })();
+    </script>
+    <style>
+      /* Apply dark mode immediately if pending */
+      html.dark-mode-pending body {
+        background-color: #0a0a0a;
+      }
+      html.dark-mode-pending::-webkit-scrollbar-track {
+        background: #1a1a1a;
+      }
+      html.dark-mode-pending::-webkit-scrollbar-thumb {
+        background: #4a4a4a;
+      }
+    </style>
+
+    <title>Projects</title>
 </head>
 <body oncontextmenu="return false">
 
@@ -26,6 +50,9 @@
               <li><a href="/#experience">Experience</a></li>
               <li><a href="/#contact">Contact</a></li>
               <li><a href="/#home">Home</a></li>
+              <li id="theme-toggle" aria-label="Switch to dark mode">
+                <i id="theme-icon" class="fas fa-moon"></i>
+              </li>
             </ul>
         </nav>
 </header>
@@ -100,6 +127,7 @@
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./script.js"></script>
+<script src="../assests/js/theme.js"></script>
 
 </body>
 </html>

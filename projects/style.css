@@ -18,6 +18,7 @@ html{
 body{
   background: #f7f7f7;
   font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 *::selection{
@@ -157,9 +158,9 @@ header .navbar ul li a:hover{
 
 /* work section starts */
 .work{
-  /* background: #010124; */
   background: linear-gradient(to bottom, #010136, #00003a);
   margin-top: 5rem;
+  transition: background 0.3s ease;
 }
 .work h2{
   color: #fff;
@@ -272,7 +273,7 @@ header .navbar ul li a:hover{
 }
 .backbtn .btn:hover{
   background: #ffffff;
-  color: #000;
+  color: #0a0a0a;
 }
 .backbtn .btn:hover i {
   transform: translateX(-8px);
@@ -417,3 +418,182 @@ header .navbar ul li a:hover{
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+/* ============================================
+   DARK MODE STYLES
+   ============================================ */
+
+body.dark-mode {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+}
+
+/* Scrollbar - Dark Mode */
+html.dark-mode::-webkit-scrollbar-track{
+  background: #1a1a1a;
+}
+
+html.dark-mode::-webkit-scrollbar-thumb{
+  background: #4a4a4a;
+}
+
+html.dark-mode::-webkit-scrollbar-thumb:hover{
+  background: #5a5a5a;
+}
+
+/* Selection - Dark Mode */
+body.dark-mode *::selection{
+  background: #420177;
+  color: #fff;
+}
+
+/* Header/Navbar - Dark Mode */
+body.dark-mode header{
+  background-color: #1a1a1a;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode header .logo{
+  color: #e0e0e0;
+}
+
+body.dark-mode header .logo:hover {
+  color: #5a9eff;
+}
+
+body.dark-mode header .navbar ul li a{
+  color: #d0d0d0;
+}
+
+body.dark-mode header .navbar ul li a.active,
+body.dark-mode header .navbar ul li a:hover{
+  color: #5a9eff;
+  border-bottom-color: #5a9eff;
+}
+
+body.dark-mode #menu{
+  color: #e0e0e0;
+}
+
+body.dark-mode header .navbar{
+  background-color: #1a1a1a;
+  border-left: 1px solid #333;
+}
+
+/* Theme Toggle Button - Dark Mode */
+body.dark-mode #theme-toggle{
+  color: #ffd700;
+}
+
+body.dark-mode #theme-toggle:hover{
+  color: #ffed4e;
+}
+
+/* Heading - Dark Mode */
+body.dark-mode .heading{
+  color: #e0e0e0;
+}
+
+body.dark-mode .heading span{
+  color: #9d6fff;
+}
+
+/* Work Section - Dark Mode */
+body.dark-mode .work{
+  background: linear-gradient(to bottom, #0a0a0a, #000014);
+}
+
+body.dark-mode .work h2{
+  color: #e0e0e0;
+}
+
+body.dark-mode .work .heading span{
+  color: #ffd700;
+}
+
+body.dark-mode .work .box-container .box{
+  background: #1a1a1a;
+  border-color: #333;
+}
+
+body.dark-mode .work .box-container .box .content{
+  background: rgba(30, 30, 30, 0.95);
+}
+
+body.dark-mode .work .box-container .box .content .tag{
+  background: #3a5a9a;
+}
+
+body.dark-mode .work .desc p{
+  color: #d0d0d0;
+}
+
+body.dark-mode .work .desc .btns .btn{
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .work .desc .btns .btn:hover{
+  background: #5a4fd2;
+  color: #fff;
+}
+
+/* Back Button - Dark Mode */
+body.dark-mode .backbtn .btn {
+  border-color: #5a9eff;
+  color: #5a9eff;
+}
+
+body.dark-mode .backbtn .btn:hover{
+  background: #5a9eff;
+  color: #ffffff;
+}
+
+/* Footer - Dark Mode */
+body.dark-mode .footer{
+  background: #0a0a0a;
+  border-top: 1px solid #333;
+}
+
+body.dark-mode .footer .box-container .box h3{
+  color: #e0e0e0;
+}
+
+body.dark-mode .footer .box-container .box p{
+  color: #c0c0c0;
+}
+
+body.dark-mode .footer .box-container .box p i{
+  color: #9d6fff;
+}
+
+body.dark-mode .footer .box-container .box a{
+  color: #d0d0d0;
+}
+
+body.dark-mode .footer .box-container .box a:hover{
+  color: #7aa3ff;
+}
+
+body.dark-mode .footer .box-container .box .share a{
+  background: #2a2a2a;
+  color: #7aa3ff;
+  border: 1px solid #444;
+}
+
+body.dark-mode .footer .box-container .box .share a:hover{
+  background: transparent;
+  border-color: #7aa3ff;
+  color: #9d6fff;
+}
+
+/* Scroll Top Button - Dark Mode */
+body.dark-mode #scroll-top{
+  background: rgba(157, 111, 255, 0.8);
+  color: #fff;
+}
+
+body.dark-mode #scroll-top:hover{
+  background: rgba(157, 111, 255, 1);
+}

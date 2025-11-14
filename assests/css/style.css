@@ -18,6 +18,7 @@ html{
 body{
   background: #f7f7f7;
   font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 *::selection{
@@ -174,6 +175,21 @@ header .navbar ul li a:hover{
   font-size: 22px;
   padding-left: 10%;
   cursor: pointer;
+  color: #0E2431;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#theme-toggle:hover{
+  color: #011aff;
+  transform: scale(1.1);
+}
+
+#theme-toggle i{
+  transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover i{
+  transform: rotate(15deg);
 }
 /* hamburger icon ends */
 
@@ -237,15 +253,45 @@ header .navbar ul li a:hover{
 }
 .home .content p{
   font-size: 2.5rem;
-  color: #000;
+  color: #0E2431;
   font-weight: 600;
   padding: 1rem 0;
+  margin: 0;
+  line-height: 1.4;
 }
-.home .content p span{
+.home .content p span:not(.typing-text):not(.typing-1):not(.typing-2):not(.typing-3) {
   font-size: 2.5rem;
   color: #2d00e2;
   font-weight: 600;
   padding: 1rem 0;
+}
+
+/* Typing text styles - Light Mode */
+.home .content p .typing-text {
+  display: inline !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  vertical-align: baseline !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  line-height: inherit !important;
+  transition: color 0.3s ease;
+}
+
+/* Color styles for each typing text variant - applied directly to .typing-text */
+.home .content p .typing-text.typing-1 {
+  color: #274bff !important;
+  text-shadow: 0 2px 4px rgba(39, 75, 255, 0.2);
+}
+
+.home .content p .typing-text.typing-2 {
+  color: #ff6b35 !important;
+  text-shadow: 0 2px 4px rgba(255, 107, 53, 0.2);
+}
+
+.home .content p .typing-text.typing-3 {
+  color: #00d9ff !important;
+  text-shadow: 0 2px 4px rgba(0, 217, 255, 0.2);
 }
 .home .btn {
   margin-top: 1rem;
@@ -339,8 +385,13 @@ header .navbar ul li a:hover{
   .home .content p {
     font-size: 2.2rem;
   }
-  .home .content p span{
+  .home .content p span:not(.typing-text) {
     font-size: 2.2rem;
+  }
+  .home .content p .typing-text {
+    font-size: 2.2rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
 /* hero media queries ends*/
@@ -513,6 +564,17 @@ header .navbar ul li a:hover{
   font-weight: 500;
   font-family: "Poppins";
   margin-left: 0.5rem;
+  color: #fff;
+}
+
+.skills .container .bar .info img {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.skills .container .bar:hover .info img {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+  transform: scale(1.05);
 }
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
@@ -538,6 +600,7 @@ header .navbar ul li a:hover{
 .education{
   background: #e5ecfb;
   min-height: 35vh;
+  transition: background 0.3s ease;
 }
 .education .qoute{
   font-size: 1.5rem;
@@ -563,12 +626,14 @@ header .navbar ul li a:hover{
   position: relative;
   margin-top: 2rem;
   overflow: hidden;
-  transition: .3s;
+  transition: all 0.3s ease;
   background: rgb(252, 252, 252);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .education .box-container .box:hover{
-  transform: scale(1.03);
-  box-shadow: 1rem .5rem 1.2rem rgba(0, 0, 0, .3);
+  transform: scale(1.03) translateY(-3px);
+  box-shadow: 1rem .5rem 1.2rem rgba(66, 28, 236, 0.2);
+  border-color: rgba(66, 28, 236, 0.3);
 }
 .education .box-container .box .image{
   flex: 1 1 20rem;
@@ -760,7 +825,7 @@ header .navbar ul li a:hover{
 }
 .work .viewall .btn:hover{
   background: #fff;
-  color: #000;
+  color: #0a0a0a;
 }
 .work .viewall .btn:hover i {
   transform: translateX(5px);
@@ -947,6 +1012,7 @@ header .navbar ul li a:hover{
 .contact{
   background: #e5ecfb;
   min-height: 60vh;
+  transition: background 0.3s ease;
 }
 .contact .container{
   max-width: 1050px;
@@ -954,7 +1020,9 @@ header .navbar ul li a:hover{
   background: #fff;
   border-radius: 1.5rem;
   margin: 2rem 5rem;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 .contact .container .content{
   display: flex;
@@ -1016,6 +1084,8 @@ form .message textarea{
 .message textarea:focus{
   padding-left: 47px;
   border: 2px solid rgb(115, 3, 167);
+  box-shadow: 0 0 0 3px rgba(115, 3, 167, 0.1);
+  transition: all 0.3s ease;
 }
 .field input:focus ~ i,
 .message textarea:focus ~ i{
@@ -1303,77 +1373,480 @@ form .button-area{
   color:white;
 }
 
-/* Dark Mode Styles */
+/* ============================================
+   DARK MODE STYLES
+   ============================================ */
 
 body.dark-mode {
-  background-color: #121212;
+  background-color: #0a0a0a;
   color: #e0e0e0;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-mode header,
-body.dark-mode footer,
-body.dark-mode section,
-body.dark-mode .card {
-  background-color: #1e1e1e;
-  color: #ddd;
-  border-color: #333;
+/* Scrollbar - Dark Mode */
+html.dark-mode::-webkit-scrollbar-track{
+  background: #1a1a1a;
 }
 
-body.dark-mode a {
-  color: #80cbc4; /* softer teal link */
+html.dark-mode::-webkit-scrollbar-thumb{
+  background: #4a4a4a;
 }
 
-body.dark-mode a:hover {
-  color: #4db6ac;
+html.dark-mode::-webkit-scrollbar-thumb:hover{
+  background: #5a5a5a;
 }
 
-body.dark-mode nav {
-  background-color: #222;
+/* Selection - Dark Mode */
+body.dark-mode *::selection{
+  background: #420177;
+  color: #fff;
+}
+
+/* Loader - Dark Mode */
+body.dark-mode .loader-container{
+  background: #0a0a0a;
+}
+
+/* Header/Navbar - Dark Mode */
+body.dark-mode header{
+  background-color: #1a1a1a;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid #333;
 }
 
-body.dark-mode button,
-body.dark-mode input,
-body.dark-mode select,
-body.dark-mode textarea {
-  background-color: #333;
-  color: #eee;
-  border: 1px solid #555;
+body.dark-mode header .logo{
+  color: #e0e0e0;
 }
 
-body.dark-mode button:hover {
-  background-color: #444;
+body.dark-mode header .logo:hover {
+  color: #5a9eff;
+}
+
+body.dark-mode header .navbar ul li a{
+  color: #d0d0d0;
+}
+
+body.dark-mode header .navbar ul li a.active,
+body.dark-mode header .navbar ul li a:hover{
+  color: #5a9eff;
+  border-bottom-color: #5a9eff;
+}
+
+body.dark-mode #menu{
+  color: #e0e0e0;
+}
+
+body.dark-mode header .navbar{
+  background-color: #1a1a1a;
+  border-left: 1px solid #333;
+}
+
+body.dark-mode header .navbar ul li a{
+  color: #e0e0e0;
+}
+
+body.dark-mode header .navbar ul li a.active,
+body.dark-mode header .navbar ul li a:hover{
+  color: #5a9eff;
+  border-bottom-color: #5a9eff;
+}
+
+/* Theme Toggle Button - Dark Mode */
+body.dark-mode #theme-toggle{
+  color: #ffd700;
+}
+
+body.dark-mode #theme-toggle:hover{
+  color: #ffed4e;
+}
+
+/* Home/Hero Section - Dark Mode */
+body.dark-mode .home .content h3{
+  color: #e0e0e0;
+}
+
+body.dark-mode .home .content h3 span{
+  color: #7aa3ff;
+}
+
+body.dark-mode .home .content p{
+  color: #d0d0d0;
+}
+
+body.dark-mode .home .content p span:not(.typing-text):not(.typing-1):not(.typing-2):not(.typing-3) {
+  color: #7aa3ff;
+}
+
+/* Typing text styles - Dark Mode */
+body.dark-mode .home .content p .typing-text {
+  padding: 0 !important;
+  margin: 0 !important;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .home .content p .typing-text.typing-1 {
+  color: #7aa3ff !important;
+  text-shadow: 0 0 10px rgba(122, 163, 255, 0.5);
+}
+
+body.dark-mode .home .content p .typing-text.typing-2 {
+  color: #ffa366 !important;
+  text-shadow: 0 0 10px rgba(255, 163, 102, 0.5);
+}
+
+body.dark-mode .home .content p .typing-text.typing-3 {
+  color: #4dd0e1 !important;
+  text-shadow: 0 0 10px rgba(77, 208, 225, 0.5);
+}
+
+body.dark-mode .home .btn {
+  background: #4a6fd8;
+  box-shadow: 0px 5px 18px rgba(74, 111, 216, 0.4);
+}
+
+body.dark-mode .home .btn:hover{
+  background: #5a7fe8;
+}
+
+/* Social Icons - Dark Mode */
+body.dark-mode .social-icons a {
+  background-color: #2a4a7a;
+}
+
+body.dark-mode .social-icons a:hover {
+  background-color: #3a5a9a;
+}
+
+/* Heading - Dark Mode */
+body.dark-mode .heading{
+  color: #e0e0e0;
+}
+
+body.dark-mode .heading span{
+  color: #9d6fff;
+}
+
+/* About Section - Dark Mode */
+body.dark-mode .about {
+  background: #121212;
+}
+
+body.dark-mode .about .row .content h3{
+  color: #e0e0e0;
+}
+
+body.dark-mode .about .row .content .tag{
+  color: #c0c0c0;
+}
+
+body.dark-mode .about .row .content p{
+  color: #d0d0d0;
+}
+
+body.dark-mode .about .row .content .box-container .box p span{
+  color: #7aa3ff;
+}
+
+body.dark-mode .resumebtn .btn {
+  background: #5a4fd2;
+  box-shadow: 0px 5px 10px rgba(90, 79, 210, 0.5);
+}
+
+body.dark-mode .resumebtn .btn:hover{
+  background: #6a5fe2;
+}
+
+/* Skills Section - Dark Mode */
+body.dark-mode .skills {
+  background: linear-gradient(to bottom, #2a004a, #1a0030);
+}
+
+body.dark-mode .skills h2 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .skills .heading span {
+  color: #ffd700;
+}
+
+body.dark-mode .skills .container {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 1px solid rgba(122, 163, 255, 0.2);
+}
+
+body.dark-mode .skills .container .bar {
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(122, 163, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .skills .container .bar:hover {
+  background-color: rgba(58, 90, 154, 0.3) !important;
+  box-shadow: 0 8px 15px rgba(122, 163, 255, 0.3) !important;
+  border-color: rgba(122, 163, 255, 0.4) !important;
+  transform: translateY(-3px);
+}
+
+body.dark-mode .skills .container .bar .info {
   color: #fff;
 }
 
-/* Cards or containers */
-body.dark-mode .card {
+body.dark-mode .skills .container .bar .info span {
+  color: #e0e0e0;
+}
+
+body.dark-mode .skills .container .bar .info img {
+  filter: brightness(1.1);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .skills .container .bar:hover .info img {
+  filter: brightness(1.3) drop-shadow(0 0 8px rgba(122, 163, 255, 0.5));
+}
+
+/* Education Section - Dark Mode */
+body.dark-mode .education{
+  background: #1a1a1a;
+}
+
+body.dark-mode .education .heading{
+  color: #e0e0e0;
+}
+
+body.dark-mode .education .heading span{
+  color: #9d6fff;
+}
+
+body.dark-mode .education .qoute{
+  color: #c0c0c0;
+}
+
+body.dark-mode .education .box-container .box{
+  background: #252525;
+  box-shadow: .2rem .5rem 1rem rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(122, 163, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .education .box-container .box:hover{
+  box-shadow: 1rem .5rem 1.2rem rgba(122, 163, 255, 0.3);
+  border-color: rgba(122, 163, 255, 0.3);
+  transform: scale(1.03) translateY(-3px);
+}
+
+body.dark-mode .education .box-container .box .content h3{
+  color: #7aa3ff;
+}
+
+body.dark-mode .education .box-container .box .content p{
+  color: #9d6fff;
+}
+
+body.dark-mode .education h4{
+  color: #6bc259;
+}
+
+body.dark-mode .education .box-container .box .content{
+  color: #e0e0e0;
+}
+
+/* Work/Projects Section - Dark Mode */
+body.dark-mode .work{
+  background: #0a0a0a;
+}
+
+body.dark-mode .work .box-container .box .content{
+  background: rgba(30, 30, 30, 0.95);
+}
+
+body.dark-mode .work .box-container .box .content .tag{
+  background: #3a5a9a;
+}
+
+body.dark-mode .work .desc p{
+  color: #d0d0d0;
+}
+
+body.dark-mode .work .desc .btns .btn{
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .work .desc .btns .btn:hover{
+  background: #5a4fd2;
+  color: #fff;
+}
+
+body.dark-mode .work .viewall .btn {
+  border-color: #5a9eff;
+  color: #5a9eff;
+}
+
+body.dark-mode .work .viewall .btn:hover{
+  background: #5a9eff;
+  color: #ffffff;
+}
+
+/* Experience Section - Dark Mode */
+body.dark-mode .experience{
+  background: #121212;
+}
+
+body.dark-mode .experience .timeline::after {
+  background: #333;
+}
+
+body.dark-mode .experience .container::after {
   background-color: #2a2a2a;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  border-color: #5a9eff;
+  color: #5a9eff;
 }
 
-/* Navbar links */
-body.dark-mode nav a {
-  color: #ccc;
+body.dark-mode .experience .left::before {
+  border-color: transparent transparent transparent #5a9eff;
 }
 
-body.dark-mode nav a:hover {
-  color: #fff;
+body.dark-mode .experience .right::before {
+  border-color: transparent #5a9eff transparent transparent;
 }
 
-/* Forms placeholder */
-body.dark-mode ::placeholder {
+body.dark-mode .experience .content {
+  background-color: #3a5a9a;
+}
+
+body.dark-mode .morebtn .btn {
+  background: #4a3fad;
+  box-shadow: 0px 5px 10px rgba(74, 63, 173, 0.6);
+}
+
+body.dark-mode .morebtn .btn:hover{
+  background: #5a4fbd;
+}
+
+/* Contact Section - Dark Mode */
+body.dark-mode .contact{
+  background: #1a1a1a;
+}
+
+body.dark-mode .contact .heading{
+  color: #e0e0e0;
+}
+
+body.dark-mode .contact .heading span{
+  color: #9d6fff;
+}
+
+body.dark-mode .contact .container{
+  background: #252525;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(122, 163, 255, 0.2);
+}
+
+body.dark-mode .contact .content .image-box img{
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+body.dark-mode .contact .content .image-box:hover img{
+  filter: brightness(1);
+}
+
+body.dark-mode form i{
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode form .field input,
+body.dark-mode form .message textarea{
+  border-color: #555;
+  background: #2a2a2a;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .field input::placeholder,
+body.dark-mode .message textarea::placeholder{
   color: #888;
 }
 
-/* Tables if any */
-body.dark-mode table {
-  background-color: #222;
-  color: #ccc;
+body.dark-mode .field input:focus,
+body.dark-mode .message textarea:focus{
+  border-color: #9d6fff;
+  background: #2f2f2f;
+  box-shadow: 0 0 0 3px rgba(157, 111, 255, 0.1);
 }
 
-body.dark-mode th,
-body.dark-mode td {
-  border-color: #444;
+body.dark-mode .field input:focus ~ i,
+body.dark-mode .message textarea:focus ~ i{
+  color: #9d6fff;
+}
+
+body.dark-mode .button-area button{
+  background: #4a3fad;
+  box-shadow: 0px 5px 15px rgba(74, 63, 173, 0.6);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .button-area button:hover{
+  background: #5a4fbd;
+  box-shadow: 0px 8px 20px rgba(90, 79, 189, 0.8);
+  transform: translateY(-2px);
+}
+
+body.dark-mode .button-area button:hover i{
+  transform: translateX(4px);
+}
+
+/* Footer Section - Dark Mode */
+body.dark-mode .footer{
+  background: #0a0a0a;
+  border-top: 1px solid #333;
+}
+
+body.dark-mode .footer .box-container .box h3{
+  color: #e0e0e0;
+}
+
+body.dark-mode .footer .box-container .box p{
+  color: #c0c0c0;
+}
+
+body.dark-mode .footer .box-container .box p i{
+  color: #9d6fff;
+}
+
+body.dark-mode .footer .box-container .box a{
+  color: #d0d0d0;
+}
+
+body.dark-mode .footer .box-container .box a:hover{
+  color: #7aa3ff;
+}
+
+body.dark-mode .footer .box-container .box .share a{
+  background: #2a2a2a;
+  color: #7aa3ff;
+  border: 1px solid #444;
+}
+
+body.dark-mode .footer .box-container .box .share a:hover{
+  background: transparent;
+  border-color: #7aa3ff;
+  color: #9d6fff;
+}
+
+/* Scroll Top Button - Dark Mode */
+body.dark-mode #scroll-top{
+  background: rgba(157, 111, 255, 0.8);
+  color: #fff;
+}
+
+body.dark-mode #scroll-top:hover{
+  background: rgba(157, 111, 255, 1);
+}
+
+/* Content h5 - Dark Mode */
+body.dark-mode .content h5{
+  color: #7aa3ff;
 }

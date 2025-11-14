@@ -20,6 +20,28 @@
   <!-- emailjs script -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+  <!-- Theme initialization - prevents flash of unstyled content -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark-mode-pending');
+      }
+    })();
+  </script>
+  <style>
+    /* Apply dark mode immediately if pending */
+    html.dark-mode-pending body {
+      background-color: #0a0a0a;
+    }
+    html.dark-mode-pending::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+    html.dark-mode-pending::-webkit-scrollbar-thumb {
+      background: #4a4a4a;
+    }
+  </style>
+
 </head>
 
 <body oncontextmenu="return false">
@@ -45,8 +67,8 @@
         <li><a href="/problems/">Problems</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li id="theme-toggle" class="text-5xl p-6 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-125 transition-transform duration-200" aria-label="Switch to dark mode">
-        <i id="theme-icon" class="fas fa-moon"></i>
+        <li id="theme-toggle" aria-label="Switch to dark mode">
+          <i id="theme-icon" class="fas fa-moon"></i>
         </li>
       </ul>
     </nav>
